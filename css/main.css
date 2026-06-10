@@ -1,5 +1,5 @@
 /* ===========================
-   JAROPLATINOS — MAIN STYLES
+   JAROPLATINOS ā€” MAIN STYLES
    =========================== */
 
 :root {
@@ -665,10 +665,10 @@ a { color: inherit; text-decoration: none; }
   object-fit: cover;
 }
 
-/* Ajuste para pantallas pequeñas */
+/* Ajuste para pantallas pequeĆ±as */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column-reverse; /* En móviles, el logo pasará arriba del texto */
+    flex-direction: column-reverse; /* En mĆ³viles, el logo pasarĆ� arriba del texto */
     text-align: center;
     padding: 3rem 1.5rem 2rem;
   }
@@ -678,7 +678,7 @@ a { color: inherit; text-decoration: none; }
   }
 
   .hero-logo-wrapper {
-    margin-bottom: 2rem; /* Espacio entre el logo y el texto en móvil */
+    margin-bottom: 2rem; /* Espacio entre el logo y el texto en mĆ³vil */
   }
 }
 .hero-avatar {
@@ -686,7 +686,7 @@ a { color: inherit; text-decoration: none; }
   height: 250px;
   border-radius: 50%;
   border: 4px solid var(--surface2);
-  /* Añadimos la animación */
+  /* AĆ±adimos la animaciĆ³n */
   animation: pulse-glow 4s infinite ease-in-out; 
   object-fit: cover;
 }
@@ -702,9 +702,26 @@ a { color: inherit; text-decoration: none; }
 .fav-btn svg { width: 18px; height: 18px; fill: #fff; transition: fill 0.2s; }
 .fav-btn.active svg { fill: #ff4757; }
 
-/* La animación para el brillo sutil */
+/* La animaciĆ³n para el brillo sutil */
 @keyframes pulse-glow {
   0% { box-shadow: 0 0 20px rgba(0, 114, 245, 0.2); }
   50% { box-shadow: 0 0 40px rgba(0, 114, 245, 0.4); }
   100% { box-shadow: 0 0 20px rgba(0, 114, 245, 0.2); }
+}
+/* --- OPTIMIZACIĆ“N MĆ“VIL: MĆS COMPACTO --- */
+@media (max-width: 600px) {
+  /* Forzamos 2 columnas en lugar de 1 */
+  .games-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+  }
+  
+  /* Reducimos un poco el padding de la informaciĆ³n para ganar espacio */
+  .game-info { padding: 10px; }
+  
+  /* Hacemos el tĆ­tulo un pelĆ­n mĆ�s pequeĆ±o para que no ocupe tanto espacio vertical */
+  .game-title { font-size: 0.85rem; margin-bottom: 4px; }
+  
+  /* Ajustamos el tamaĆ±o del icono de trofeos y texto */
+  .game-meta { font-size: 0.7rem; }
 }
