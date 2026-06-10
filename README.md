@@ -53,4 +53,4 @@ Cuando quieras pasar a backend real:
 | Login PSN OAuth real | ⏳ (requiere Supabase) |
 | Progreso en la nube | ⏳ (requiere Supabase) |
 | Perfiles públicos PSN | ⏳ (requiere Supabase) |
-| Scraper PSNProfiles | ✅ |
+
