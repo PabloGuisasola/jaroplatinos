@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JaroPlatinos — Foro</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .forum-container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+    .forum-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem; }
+    .forum-sub { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem; }
+    .new-thread-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .new-thread-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 1rem; }
+    .thread-input {
+      width: 100%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      outline: none;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      transition: border-color 0.15s;
+    }
+    .thread-input:focus { border-color: var(--psn-blue); }
+    .thread-input::placeholder { color: var(--text-faint); }
+    textarea.thread-input { resize: vertical; min-height: 80px; font-family: inherit; }
+    .thread-post-btn {
+      padding: 10px 20px;
+      background: var(--psn-blue);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .thread-post-btn:hover { background: var(--psn-blue-glow); }
+    .thread-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .thread-item:hover { border-color: var(--border-strong); }
+    .thread-item-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+    .thread-item-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
+    .thread-item-preview { font-size: 0.82rem; color: var(--text-muted); }
+    .thread-item-meta { font-size: 0.75rem; color: var(--text-faint); white-space: nowrap; margin-top: 4px; }
+    .thread-replies-badge {
+      font-size: 0.75rem;
+      background: var(--surface2);
+      border-radius: 6px;
+      padding: 3px 9px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .thread-detail { display: none; }
+    .thread-detail.open { display: block; }
+    .thread-detail-content {
+      background: var(--surface2);
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .thread-replies-list { margin-top: 10px; }
+    .thread-reply-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+    }
+    .reply-avatar {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--psn-blue);
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 700; font-size: 0.7rem;
+    }
+    .reply-username { font-weight: 700; font-size: 0.8rem; color: var(--psn-blue-glow); }
+    .reply-text { color: var(--text-muted); margin-top: 2px; white-space: pre-wrap; word-break: break-word; }
+    .reply-time { font-size: 0.7rem; color: var(--text-faint); }
+    .reply-input-row { display: flex; gap: 8px; margin-top: 10px; }
+    .reply-input {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 0.85rem;
+      outline: none;
+    }
+    .reply-input:focus { border-color: var(--psn-blue); }
+    .reply-input::placeholder { color: var(--text-faint); }
+    .btn-reply-send {
+      padding: 8px 14px;
+      background: var(--psn-blue);
+      border: none; border-radius: 6px;
+      color: #fff; font-weight: 700; font-size: 0.82rem;
+      cursor: pointer;
+    }
+    .login-nudge { font-size: 0.82rem; color: var(--text-muted); }
+    .login-nudge a { color: var(--psn-blue-glow); }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">Jaro<span>Platinos</span></a>
+    <div class="nav-links">
+      <a href="#" id="nav-back">← Trofeos</a>
+      <a href="chat.html">Chat general</a>
+    </div>
+  </nav>
+
+  <div class="forum-container">
+    <h1 class="forum-title" id="forum-title">Foro — Cargando...</h1>
+    <p class="forum-sub">Ayuda a la comunidad con estrategias, dudas y consejos sobre el platino.</p>
+
+    <div class="new-thread-card" id="new-thread-card">
+      <h3>Crear nuevo hilo</h3>
+      <input class="thread-input" id="thread-title-input" placeholder="Título del hilo (ej: ¿Alguien pasó el Panteón 5?)" maxlength="120">
+      <textarea class="thread-input" id="thread-body-input" placeholder="Explica tu duda o comparte tu estrategia..." maxlength="1000"></textarea>
+      <button class="thread-post-btn" id="btn-post-thread">Publicar hilo</button>
+    </div>
+
+    <div id="threads-list">
+      <!-- Generado por JS -->
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>JaroPlatinos · Foro de la comunidad</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const gameId = params.get('id');
+    const FORUM_KEY = 'jp_forum_' + gameId;
+
+    const navBack = document.getElementById('nav-back');
+    if (navBack) navBack.href = `game.html?id=${gameId}`;
+
+    function getUser() { return JSON.parse(localStorage.getItem('jp_user') || 'null'); }
+    function getThreads() { return JSON.parse(localStorage.getItem(FORUM_KEY) || '[]'); }
+    function saveThreads(t) { localStorage.setItem(FORUM_KEY, JSON.stringify(t)); }
+    function now() {
+      return new Date().toLocaleDateString('es-ES', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
+    }
+
+    // Set title from game data if available
+    function setTitle() {
+      if (typeof GAMES_DATA !== 'undefined') {
+        const game = GAMES_DATA.find(g => g.id === gameId);
+        if (game) document.getElementById('forum-title').textContent = `Foro — ${game.title}`;
+      }
+    }
+
+    function renderThreads() {
+      const threads = getThreads();
+      const list = document.getElementById('threads-list');
+      const user = getUser();
+
+      if (threads.length === 0) {
+        list.innerHTML = `<div class="empty-state"><span style="font-size:2rem">💬</span><p>Sé el primero en crear un hilo para este juego.</p></div>`;
+        return;
+      }
+
+      list.innerHTML = threads.map((thread, idx) => `
+        <div class="thread-item" data-idx="${idx}">
+          <div class="thread-item-header">
+            <div>
+              <div class="thread-item-title">${escapeHTML(thread.title)}</div>
+              <div class="thread-item-preview">${escapeHTML(thread.body.slice(0, 100))}${thread.body.length > 100 ? '…' : ''}</div>
+              <div class="thread-item-meta">por <strong style="color:var(--psn-blue-glow)">${thread.username}</strong> · ${thread.time}</div>
+            </div>
+            <span class="thread-replies-badge">💬 ${(thread.replies || []).length}</span>
+          </div>
+          <div class="thread-detail" id="thread-detail-${idx}">
+            <div class="thread-detail-content">${escapeHTML(thread.body)}</div>
+            <div class="thread-replies-list">
+              ${(thread.replies || []).map(r => `
+                <div class="thread-reply-item">
+                  <div class="reply-avatar">${r.username.slice(0,2).toUpperCase()}</div>
+                  <div>
+                    <div class="reply-username">${r.username}</div>
+                    <div class="reply-text">${escapeHTML(r.text)}</div>
+                    <div class="reply-time">${r.time}</div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+            ${user
+              ? `<div class="reply-input-row">
+                  <input class="reply-input" data-idx="${idx}" placeholder="Responde al hilo..." maxlength="500">
+                  <button class="btn-reply-send" data-idx="${idx}">Responder</button>
+                </div>`
+              : `<p class="login-nudge"><a href="login.html">Inicia sesión</a> para responder.</p>`}
+          </div>
+        </div>
+      `).join('');
+
+      // Ocultamos el formulario si no hay sesión
+      const newThreadCard = document.getElementById('new-thread-card');
+      if (!user) {
+        newThreadCard.innerHTML = `<p class="login-nudge"><a href="login.html">Inicia sesión</a> para crear hilos.</p>`;
+      }
+    }
+
+    function escapeHTML(str) {
+      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    // Crear hilo
+    document.getElementById('btn-post-thread') && document.getElementById('btn-post-thread').addEventListener('click', () => {
+      const user = getUser();
+      if (!user) { alert('Inicia sesión primero.'); return; }
+      const title = document.getElementById('thread-title-input').value.trim();
+      const body = document.getElementById('thread-body-input').value.trim();
+      if (!title || !body) return;
+      const threads = getThreads();
+      threads.unshift({ title, body, username: user.username, time: now(), replies: [] });
+      saveThreads(threads);
+      document.getElementById('thread-title-input').value = '';
+      document.getElementById('thread-body-input').value = '';
+      renderThreads();
+    });
+
+    // Eventos delegados: abrir hilo y enviar respuesta
+    document.getElementById('threads-list').addEventListener('click', e => {
+      // Abrir/cerrar hilo
+      const item = e.target.closest('.thread-item');
+      if (item && !e.target.closest('.btn-reply-send') && !e.target.closest('.reply-input')) {
+        const idx = item.dataset.idx;
+        const detail = document.getElementById('thread-detail-' + idx);
+        detail.classList.toggle('open');
+      }
+      // Responder
+      const sendBtn = e.target.closest('.btn-reply-send');
+      if (sendBtn) {
+        const user = getUser();
+        if (!user) return;
+        const idx = sendBtn.dataset.idx;
+        const input = document.querySelector(`.reply-input[data-idx="${idx}"]`);
+        if (!input || !input.value.trim()) return;
+        const threads = getThreads();
+        if (!threads[idx].replies) threads[idx].replies = [];
+        threads[idx].replies.push({ username: user.username, text: input.value.trim(), time: now() });
+        saveThreads(threads);
+        renderThreads();
+        // Reabrir el hilo
+        setTimeout(() => {
+          const detail = document.getElementById('thread-detail-' + idx);
+          if (detail) { detail.classList.add('open'); }
+        }, 0);
+      }
+    });
+
+    setTitle();
+    renderThreads();
+  </script>
+
+  <!-- Necesario para setTitle() -->
+  <script src="../js/games-data.js"></script>
+</body>
+</html>

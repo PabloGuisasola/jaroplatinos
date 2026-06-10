@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JaroPlatinos — Identificarse</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .login-page {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .login-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .login-logo { font-size: 3rem; margin-bottom: 1rem; }
+    .login-card h1 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .login-card p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem; }
+    
+    .input-field {
+      width: 100%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 1rem;
+      outline: none;
+      margin-bottom: 1.5rem;
+      box-sizing: border-box;
+      transition: border-color 0.15s;
+    }
+    .input-field:focus { border-color: var(--psn-blue); }
+    
+    .btn-enter {
+      width: 100%;
+      padding: 14px;
+      background: var(--psn-blue);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-enter:hover { background: var(--psn-blue-glow); }
+    
+    .logged-in-card { display: none; }
+    .profile-avatar {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: var(--psn-blue);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; font-weight: 700;
+      margin: 0 auto 1rem;
+    }
+    .btn-logout {
+      width: 100%;
+      padding: 12px;
+      background: transparent;
+      border: 1px solid var(--border-strong);
+      color: var(--text-muted);
+      border-radius: 8px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">Jaro<span>Platinos</span></a>
+    <div class="nav-links">
+      <a href="../index.html">← Catálogo</a>
+    </div>
+  </nav>
+
+  <div class="login-page">
+    <div class="login-card" id="login-card">
+      <div class="login-logo">🎮</div>
+      <h1>Entrar a la comunidad</h1>
+      <p>Elige un nombre de usuario para participar en el chat.</p>
+
+      <input class="input-field" id="username" type="text" placeholder="Escribe tu nombre..." maxlength="20">
+      <button class="btn-enter" id="btn-enter">Entrar al chat</button>
+    </div>
+
+    <div class="login-card logged-in-card" id="logged-in-card">
+      <div class="profile-avatar" id="user-avatar"></div>
+      <h1 id="user-welcome">¡Hola!</h1>
+      <p>Sesión activa. Ya puedes chatear con los demás.</p>
+      <a href="../index.html" class="cta-btn" style="display:inline-block; width:100%; box-sizing:border-box;">Ir al catálogo</a>
+      <button class="btn-logout" id="btn-logout">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <script>
+    const loginCard = document.getElementById('login-card');
+    const loggedInCard = document.getElementById('logged-in-card');
+
+    function getUser() { return JSON.parse(localStorage.getItem('jp_user') || 'null'); }
+
+    function showLoggedIn(user) {
+      loginCard.style.display = 'none';
+      loggedInCard.style.display = 'block';
+      document.getElementById('user-avatar').textContent = user.username.slice(0,2).toUpperCase();
+      document.getElementById('user-welcome').textContent = `¡Hola, ${user.username}!`;
+    }
+
+    const existing = getUser();
+    if (existing) showLoggedIn(existing);
+
+    // Botón Entrar
+    document.getElementById('btn-enter').addEventListener('click', () => {
+      const username = document.getElementById('username').value.trim();
+      if (!username) {
+        document.getElementById('username').focus();
+        return;
+      }
+      const user = { username, date: new Date().toISOString() };
+      localStorage.setItem('jp_user', JSON.stringify(user));
+      showLoggedIn(user);
+    });
+
+    // Logout
+    document.getElementById('btn-logout').addEventListener('click', () => {
+      localStorage.removeItem('jp_user');
+      loginCard.style.display = 'block';
+      loggedInCard.style.display = 'none';
+      document.getElementById('username').value = '';
+    });
+  </script>
+</body>
+</html>

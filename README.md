@@ -1,18 +1,72 @@
-# JaroPlatinos 🎮
+# JaroPlatinos 🏆
 
-JaroPlatinos es una aplicación web diseñada para cazadores de trofeos. 
+Tracker interactivo de trofeos de PlayStation, sin spoilers, con chat y foros de comunidad.
 
-## 🚀 Características
-- **Guías sin spoilers:** Información estructurada para obtener platinos sin arruinarte la experiencia.
-- **Seguimiento de progreso:** Marca los trofeos que ya tienes y visualiza tu avance en tiempo real.
-- **Biblioteca Personal:** Guarda tus juegos favoritos para acceder rápidamente.
-- **Buscador:** Filtra por plataforma (PS4/PS5) y tipos de trofeo.
+## Estructura del proyecto
 
-## 🛠 Tecnologías
-- HTML5 / CSS3 / JavaScript (Vanilla)
-- Almacenamiento local (LocalStorage) para guardar tu progreso sin necesidad de base de datos.
+```
+jaroplatinos/
+├── index.html              ← Catálogo de juegos
+├── css/
+│   └── main.css            ← Estilos globales
+├── js/
+│   ├── games-data.js       ← Datos de todos los juegos y trofeos
+│   ├── catalog.js          ← Lógica del catálogo (búsqueda, filtros)
+│   └── game-page.js        ← Lógica de la página de trofeos
+├── pages/
+│   ├── game.html           ← Checklist de trofeos (con comentarios)
+│   ├── forum.html          ← Foro por juego
+│   ├── chat.html           ← Chat global de la comunidad
+│   └── login.html          ← Login (PSN OAuth / temporal)
+└── scraper/
+    └── scraper.js          ← Scraper de PSNProfiles (Node.js)
+```
 
-## 💡 Cómo usarlo
-1. Visita la web oficial.
-2. Navega por el catálogo y marca tus trofeos completados.
-3. ¡Tus datos se guardan automáticamente en tu navegador!
+## Deploy gratuito en GitHub Pages
+
+1. Sube la carpeta a un repositorio de GitHub
+2. Ve a Settings → Pages → Source: `main` / `root`
+3. La web estará en `https://TU_USUARIO.github.io/jaroplatinos`
+
+## Añadir juegos con el scraper
+
+```bash
+cd scraper
+npm install axios cheerio
+node scraper.js https://psnprofiles.com/trophies/XXXXX-nombre-del-juego
+```
+
+El scraper genera un `.json` que copias al array `GAMES` en `js/games-data.js`.
+
+**Campos a rellenar manualmente tras el scrape:**
+- `chapter` — el capítulo al que pertenece cada trofeo
+- `guide` — consejo o advertencia específica
+- `difficulty` — dificultad estimada del platino
+- `minHours` — horas mínimas aproximadas
+- `missable: true` — marcar los trofeos perdibles
+
+## Fases siguientes (Supabase)
+
+Cuando quieras pasar a backend real:
+
+1. Crea cuenta gratis en [supabase.com](https://supabase.com)
+2. Crea las tablas: `users`, `progress`, `comments`, `forum_threads`, `chat_messages`
+3. Activa PSN OAuth en Authentication → Providers → PlayStation Network
+4. Sustituye los `localStorage` por llamadas a la API de Supabase
+5. Activa `supabase.channel()` para el chat en tiempo real
+
+## Estado actual
+
+| Funcionalidad | Estado |
+|---|---|
+| Catálogo con búsqueda y filtros | ✅ |
+| Checklist de trofeos por capítulo | ✅ |
+| Progreso guardado localmente | ✅ |
+| Comentarios por trofeo | ✅ (localStorage) |
+| Foro por juego | ✅ (localStorage) |
+| Chat global | ✅ (localStorage) |
+| Login temporal | ✅ |
+| Login PSN OAuth real | ⏳ (requiere Supabase) |
+| Progreso en la nube | ⏳ (requiere Supabase) |
+| Perfiles públicos PSN | ⏳ (requiere Supabase) |
+| Scraper PSNProfiles | ✅ |
