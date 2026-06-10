@@ -568,3 +568,34 @@ a { color: inherit; text-decoration: none; }
   .trophy-card-main { flex-direction: column; align-items: flex-start; gap: 8px; }
   .trophy-actions { padding-right: 0; padding-top: 6px; }
 }
+
+/* ---- BOTÓN DE FAVORITOS ---- */
+.fav-btn {
+  position: absolute; 
+  top: 12px; 
+  left: 12px;
+  background: rgba(0,0,0,0.6); 
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.1); 
+  cursor: pointer;
+  padding: 8px; 
+  border-radius: 50%;
+  transition: transform 0.2s, background 0.2s; 
+  z-index: 10;
+}
+
+.fav-btn:hover { 
+  transform: scale(1.1); 
+  background: rgba(0,0,0,0.8); 
+}
+
+.fav-btn svg { 
+  width: 18px; 
+  height: 18px; 
+  fill: #fff; 
+  transition: fill 0.2s; 
+}
+
+.fav-btn.active svg { 
+  fill: #ff4757; 
+}
