@@ -28,22 +28,6 @@ jaroplatinos/
 2. Ve a Settings → Pages → Source: `main` / `root`
 3. La web estará en `https://TU_USUARIO.github.io/jaroplatinos`
 
-## Añadir juegos con el scraper
-
-```bash
-cd scraper
-npm install axios cheerio
-node scraper.js https://psnprofiles.com/trophies/XXXXX-nombre-del-juego
-```
-
-El scraper genera un `.json` que copias al array `GAMES` en `js/games-data.js`.
-
-**Campos a rellenar manualmente tras el scrape:**
-- `chapter` — el capítulo al que pertenece cada trofeo
-- `guide` — consejo o advertencia específica
-- `difficulty` — dificultad estimada del platino
-- `minHours` — horas mínimas aproximadas
-- `missable: true` — marcar los trofeos perdibles
 
 ## Fases siguientes (Supabase)
 
