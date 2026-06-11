@@ -1241,7 +1241,7 @@ const GAMES = [
   "slug": "uncharted-4-el-desenlace-del-ladron",
   "title": "Uncharted 4: El desenlace del ladrón",
   "platform": "PS4 / PS5 / PC",
-  "cover": "img/uncharted4.jpg",
+  "cover": "img/uncharted 4.jpg",
   "emoji": "🏴‍☠️",
   "totalTrophies": 56,
   "difficulty": "6/10",
