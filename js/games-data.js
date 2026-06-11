@@ -443,71 +443,84 @@ const GAMES = [
     ]
   },
   {
-    id: "gta5",
-    slug: "gta-v",
-    title: "Grand Theft Auto V",
-    platform: "PS4 / PS5 / PC",
-    cover: "img/gta5.jpg",
-    emoji: "🚗",
-    totalTrophies: 55,
-    difficulty: "7/10",
-    minHours: 100,
-    hasMissable: true,
-    tags: ["mundo-abierto", "online", "acción", "sandbox"],
-    trophies: [
-      // PLATINO
-      { id: "gta_01", chapter: "Platino", name: "Leyenda de Los Santos", desc: "Consigue todos los trofeos.", type: "platinum", missable: false, online: true, guide: "Requiere completar el juego al 100% y alcanzar nivel 100 en el Online." },
+  "id": "gta5",
+  "slug": "gta-v",
+  "title": "Grand Theft Auto V",
+  "platform": "PS4 / PS5 / PC",
+  "cover": "img/gta5.jpg",
+  "emoji": "🚗",
+  "totalTrophies": 55,
+  "difficulty": "7/10",
+  "minHours": 100,
+  "hasMissable": true,
+  "tags": ["mundo-abierto", "online", "acción", "sandbox"],
+  "trophies": [
+    // PLATINO
+    { "id": "gta_01", "chapter": "Platino", "name": "Leyenda de Los Santos", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": true, "guide": "Requiere completar el juego al 100% y alcanzar nivel 100 en el Online." },
 
-      // HISTORIA
-      { id: "gta_02", chapter: "Historia", name: "Criminal profesional", desc: "Consigue completar el juego al 100%.", type: "gold", missable: false, online: false, guide: "Requiere completar todas las misiones, coleccionables y actividades." },
-      { id: "gta_03", chapter: "Historia", name: "¡Oro puro!", desc: "Repite misiones y extraños y locos y consigue 70 medallas de oro.", type: "gold", missable: false, online: false, guide: "Debes cumplir todos los objetivos secundarios en las misiones." },
-      { id: "gta_04", chapter: "Historia", name: "La vida libre", desc: "Completa la misión final.", type: "gold", missable: true, online: false, guide: "Elige el final que permite salvar a los tres protagonistas." },
-      { id: "gta_05", chapter: "Historia", name: "Macho alfa en la bolsa", desc: "Consigue beneficios que cubran el total de tus inversiones en bolsa.", type: "bronze", missable: false, online: false, guide: "Aprovecha las misiones de asesinato de Lester para manipular el mercado." },
-      { id: "gta_06", chapter: "Historia", name: "Niebla de furia", desc: "Completa todas las masacres.", type: "bronze", missable: false, online: false, guide: "Son los eventos de Trevor." },
-      { id: "gta_07", chapter: "Historia", name: "Kifflom!", desc: "Completa tu camino a la iluminación.", type: "silver", missable: true, online: false, guide: "Sigue la cadena de misiones de los Epsilon." },
-      { id: "gta_08", chapter: "Historia", name: "Un misterio resuelto", desc: "Resuelve el misterio de Leonora Johnson.", type: "silver", missable: false, online: false, guide: "Recoge todos los trozos de carta repartidos por el mapa." },
-      { id: "gta_09", chapter: "Historia", name: "Más allá de las estrellas", desc: "Recoge y devuelve todas las piezas de la nave espacial.", type: "silver", missable: false, online: false, guide: "Hay 50 piezas por el mapa." },
-      { id: "gta_10", chapter: "Historia", name: "Gestión de residuos", desc: "Compra el viejo muelle y recoge todo el desperdicio nuclear.", type: "bronze", missable: false, online: false, guide: "Usa el submarino para recoger los 30 bidones." },
-      { id: "gta_11", chapter: "Historia", name: "Paparazzi", desc: "Completa la misión secundaria de Beverley.", type: "bronze", missable: true, online: false, guide: "Sigue sus misiones de fotografía." },
-      { id: "gta_12", chapter: "Historia", name: "Por un pelo", desc: "Completa todos los desafíos bajo el puente y de vuelo a cuchillo.", type: "silver", missable: false, online: false, guide: "Requiere habilidad de vuelo avanzada." },
-      { id: "gta_13", chapter: "Historia", name: "Acólito altruista", desc: "Entrega una víctima desprevenida a la secta altruista.", type: "bronze", missable: true, online: false, guide: "Como Trevor, lleva a un personaje aleatorio a la secta." },
-      { id: "gta_14", chapter: "Historia", name: "Multidisciplinar", desc: "Consigue una medalla de oro en todas las aficiones y pasatiempos.", type: "bronze", missable: false, online: false, guide: "Incluye carreras, caza, golf, tenis, etc." },
-      { id: "gta_15", chapter: "Historia", name: "Explorador de San Andreas", desc: "Explora todo Los Santos y el condado de Blaine.", type: "bronze", missable: false, online: false, guide: "Revela todo el mapa." },
-      { id: "gta_16", chapter: "Historia", name: "Bienvenido a Los Santos", desc: "Completa la primera misión.", type: "bronze", missable: false, online: false, guide: "Automático." },
-      { id: "gta_17", chapter: "Historia", name: "Un cambio de carrera", desc: "Completa la misión de robo de joyas.", type: "bronze", missable: false, online: false, guide: "Automático." },
-      { id: "gta_18", chapter: "Historia", name: "La verdad sale a la luz", desc: "Descubre la verdad sobre lo ocurrido en North Yankton.", type: "bronze", missable: false, online: false, guide: "Automático." },
-      { id: "gta_19", chapter: "Historia", name: "Conoce a la familia", desc: "Completa la misión de Franklin y Lamar.", type: "bronze", missable: false, online: false, guide: "Automático." },
+    // HISTORIA
+    { "id": "gta_02", "chapter": "Historia", "name": "Criminal profesional", "desc": "Consigue completar el juego al 100%.", "type": "gold", "missable": false, "online": false, "guide": "Requiere completar todas las misiones principales, coleccionables y actividades indicadas en la checklist del Social Club." },
+    { "id": "gta_03", "chapter": "Historia", "name": "¡Oro puro!", "desc": "Repite misiones y extraños y locos y consigue 70 medallas de oro.", "type": "gold", "missable": false, "online": false, "guide": "Debes cumplir todos los objetivos secundarios en las misiones. No es necesario que sean seguidos." },
+    { "id": "gta_04", "chapter": "Historia", "name": "Vivir o morir en Los Santos", "desc": "Completa la misión final.", "type": "gold", "missable": true, "online": false, "guide": "¡Muy importante! Elige la Opción C al final del juego para salvar a los tres protagonistas y evitar perder otros trofeos." },
+    { "id": "gta_05", "chapter": "Historia", "name": "Bienvenido a Los Santos", "desc": "Completa la primera misión con Franklin y Lamar.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia." },
+    { "id": "gta_06", "chapter": "Historia", "name": "Un diamante en bruto", "desc": "Completa el golpe a la joyería Vangelico.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia." },
+    { "id": "gta_07", "chapter": "Historia", "name": "Subcontratado", "desc": "Completa el asalto a Merryweather.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia." },
+    { "id": "gta_08", "chapter": "Historia", "name": "Blindaje hecho", "desc": "Completa la misión de asalto al furgón blindado (Blitz Play).", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia." },
+    { "id": "gta_09", "chapter": "Historia", "name": "Pueblo chico, gran trabajo", "desc": "Completa el golpe de Paleto Bay.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia." },
+    { "id": "gta_10", "chapter": "Historia", "name": "Los inútiles del gobierno", "desc": "Completa el asalto al edificio del FIB.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia." },
+    { "id": "gta_11", "chapter": "Historia", "name": "¡El grande!", "desc": "Completa el gran golpe final a la reserva federal.", "type": "silver", "missable": false, "online": false, "guide": "Automático por la historia." },
+    { "id": "gta_12", "chapter": "Historia", "name": "Niebla de furia", "desc": "Completa todas las masacres.", "type": "bronze", "missable": false, "online": false, "guide": "Son los 5 eventos de frenesí exclusivos de Trevor." },
+    { "id": "gta_13", "chapter": "Historia", "name": "¡Kifflom!", "desc": "Completa tu camino a la iluminación.", "type": "silver", "missable": true, "online": false, "guide": "Sigue la larga cadena de misiones secundarias de la secta Epsilon con Michael en su web móvil." },
+    { "id": "gta_14", "chapter": "Historia", "name": "Un misterio resuelto", "desc": "Resuelve el misterio de Leonora Johnson.", "type": "silver", "missable": false, "online": false, "guide": "Recoge los 50 trozos de carta repartidos por el mapa y liquida al asesino." },
+    { "id": "gta_15", "chapter": "Historia", "name": "Más allá de las estrellas", "desc": "Recoge y devuelve todas las piezas de la nave espacial.", "type": "silver", "missable": false, "online": false, "guide": "Hay 50 piezas por el mapa. Lllévaselas a Omega." },
+    { "id": "gta_16", "chapter": "Historia", "name": "Gestión de residuos", "desc": "Compra el viejo muelle y recoge todo el desperdicio nuclear.", "type": "bronze", "missable": false, "online": false, "guide": "Compra la propiedad del muelle y usa el minisubmarino para recoger los 30 bidones." },
+    { "id": "gta_17", "chapter": "Historia", "name": "Multidisciplinar", "desc": "Consigue una medalla de oro en todas las aficiones y pasatiempos.", "type": "bronze", "missable": false, "online": false, "guide": "Incluye una medalla de oro en escuela de vuelo, galería de tiro, carreras urbanas, todoterreno, marítimas y triatlón." },
+    { "id": "gta_18", "chapter": "Historia", "name": "Explorador de San Andreas", "desc": "Explora todo Los Santos y el condado de Blaine.", "type": "bronze", "missable": false, "online": false, "guide": "Despeja casi toda la niebla del mapa físico volando o conduciendo." },
 
-      // GTA ONLINE
-      { id: "gta_20", chapter: "Online", name: "Reconocimiento", desc: "Llega al nivel 100 en GTA Online.", type: "silver", missable: false, online: true, guide: "La base de tu carrera criminal." },
-      { id: "gta_21", chapter: "Online", name: "Número uno", desc: "Gana en todos los tipos de partidas competitivas.", type: "silver", missable: false, online: true, guide: "Tenis, golf, carreras, saltos, etc." },
-      { id: "gta_22", chapter: "Online", name: "Poco a poco", desc: "Llega al nivel 50 en GTA Online.", type: "bronze", missable: false, online: true, guide: "Automático al subir de nivel." },
-      { id: "gta_23", chapter: "Online", name: "Gánster de pacotilla", desc: "Llega al nivel 25 en GTA Online.", type: "bronze", missable: false, online: true, guide: "Automático al subir de nivel." },
-      { id: "gta_24", chapter: "Online", name: "Recién llegado", desc: "Completa la introducción a GTA Online.", type: "bronze", missable: false, online: true, guide: "Automático." },
-      { id: "gta_25", chapter: "Online", name: "Sueño americano", desc: "Consigue un apartamento, un garaje y un vehículo asegurado.", type: "bronze", missable: false, online: true, guide: "Requisito básico." },
-      { id: "gta_26", chapter: "Online", name: "En equipo", desc: "Completa una actividad como miembro de una Crew.", type: "bronze", missable: false, online: true, guide: "Juega con amigos." },
-      { id: "gta_27", chapter: "Online", name: "Barrido total", desc: "Termina un ataque a banda sin morir y mata a 10 enemigos.", type: "bronze", missable: false, online: true, guide: "Busca las zonas rojas en el mapa." },
-      { id: "gta_28", chapter: "Online", name: "Correr como el viento", desc: "Sobrevive un día con una recompensa por tu cabeza.", type: "bronze", missable: false, online: true, guide: "Evita el combate durante 48 min de tiempo real." },
-      { id: "gta_29", chapter: "Online", name: "Selección antinatural", desc: "Completa las 10 oleadas de supervivencia.", type: "bronze", missable: false, online: true, guide: "Requiere equipo y cubrirse bien." },
-      { id: "gta_30", chapter: "Online", name: "Midnight Club", desc: "Gana 5 carreras con vehículos personalizados.", type: "bronze", missable: false, online: true, guide: "Modifica tu coche en LSC." },
-      { id: "gta_31", chapter: "Online", name: "Llamada de socorro", desc: "Pide un helicóptero de apoyo por primera vez.", type: "bronze", missable: false, online: true, guide: "Llama a Merryweather." },
-      { id: "gta_32", chapter: "Online", name: "Atracador", desc: "Atraca las 20 tiendas.", type: "bronze", missable: false, online: true, guide: "Tiendas marcadas con un icono de tienda." },
-      { id: "gta_33", chapter: "Online", name: "Reembolso completo", desc: "Mata al ladrón que te atracó.", type: "bronze", missable: false, online: true, guide: "Si un NPC te roba, mátalo rápido." },
-      { id: "gta_34", chapter: "Online", name: "Desde el asiento de atrás", desc: "Guía a un conductor al primer puesto en modo rally.", type: "bronze", missable: false, online: true, guide: "Coordinación por voz necesaria." },
-      { id: "gta_35", chapter: "Online", name: "Disfruta de la estancia", desc: "Participa en todo lo que Los Santos puede ofrecer.", type: "bronze", missable: false, online: true, guide: "Dardos, brazo de hierro, tenis, golf, etc." },
-      { id: "gta_36", chapter: "Online", name: "Condecorado", desc: "Gana 30 premios de platino.", type: "silver", missable: false, online: true, guide: "Requiere completar desafíos específicos de estadísticas." },
+    // GTA ONLINE
+    { "id": "gta_19", "chapter": "Online", "name": "Reconocimiento", "desc": "Llega al nivel 100 en GTA Online.", "type": "silver", "missable": false, "online": true, "guide": "La base de tu carrera criminal. Sube de rango completando misiones y golpes." },
+    { "id": "gta_20", "chapter": "Online", "name": "Número uno", "desc": "Gana en todos los tipos de partidas competitivas.", "type": "silver", "missable": false, "online": true, "guide": "Gana en tenis, golf, dardos, carreras (estándar, GTA, rally), paracaidismo, galería de tiro, ataque a banda y partida a muerte." },
+    { "id": "gta_21", "chapter": "Online", "name": "Poco a poco", "desc": "Llega al nivel 50 en GTA Online.", "type": "bronze", "missable": false, "online": true, "guide": "Automático al subir de nivel." },
+    { "id": "gta_22", "chapter": "Online", "name": "Gánster de pacotilla", "desc": "Llega al nivel 25 en GTA Online.", "type": "bronze", "missable": false, "online": true, "guide": "Automático al subir de nivel." },
+    { "id": "gta_23", "chapter": "Online", "name": "Recién llegado", "desc": "Completa la introducción a GTA Online.", "type": "bronze", "missable": false, "online": true, "guide": "Completa el tutorial inicial guiado por Lamar." },
+    { "id": "gta_24", "chapter": "Online", "name": "Sueño americano", "desc": "Consigue un apartamento, un garaje y un vehículo asegurado.", "type": "bronze", "missable": false, "online": true, "guide": "Cómpralos desde internet y asegura un coche en cualquier taller de Los Santos Customs." },
+    { "id": "gta_25", "chapter": "Online", "name": "En equipo", "desc": "Completa una actividad como miembro de una Crew.", "type": "bronze", "missable": false, "online": true, "guide": "Juega y termina cualquier actividad junto a un compañero de tu misma crew." },
+    { "id": "gta_26", "chapter": "Online", "name": "Barrido total", "desc": "Termina un ataque a banda sin morir y mata a 10 enemigos.", "type": "bronze", "missable": false, "online": true, "guide": "Busca los círculos rojos en el mapa e inicia el combate eliminando a 10 enemigos sin caer." },
+    { "id": "gta_27", "chapter": "Online", "name": "Correr como el viento", "desc": "Sobrevive un día con una recompensa por tu cabeza.", "type": "bronze", "missable": false, "online": true, "guide": "Evita que te maten otros jugadores durante 48 minutos reales. Puedes quedarte dentro de tu apartamento." },
+    { "id": "gta_28", "chapter": "Online", "name": "Selección antinatural", "desc": "Completa las 10 oleadas de supervivencia.", "type": "bronze", "missable": false, "online": true, "guide": "Requiere un buen equipo, armamento pesado y buscar una cobertura sólida." },
+    { "id": "gta_29", "chapter": "Online", "name": "Midnight Club", "desc": "Gana 5 carreras con vehículos personalizados.", "type": "bronze", "missable": false, "online": true, "guide": "Gana carreras utilizando un coche de tu propiedad previamente mejorado." },
+    { "id": "gta_30", "chapter": "Online", "name": "Llamada de socorro", "desc": "Pide un helicóptero de apoyo por primera vez.", "type": "bronze", "missable": false, "online": true, "guide": "Llama a Merryweather desde los contactos de tu móvil tras alcanzar el nivel adecuado." },
+    { "id": "gta_31", "chapter": "Online", "name": "Atracador", "desc": "Atraca las 20 tiendas.", "type": "bronze", "missable": false, "online": true, "guide": "Entra, apunta al cajero y huye de la policía en los 20 establecimientos marcados." },
+    { "id": "gta_32", "chapter": "Online", "name": "Reembolso completo", "desc": "Mata al ladrón que te atracó.", "type": "bronze", "missable": false, "online": true, "guide": "Si un jugador te manda un ladrón que te tire al suelo y te robe, persíguelo y asesínalo para recuperar tu dinero." },
+    { "id": "gta_33", "chapter": "Online", "name": "Desde el asiento de atrás", "desc": "Guía a un conductor al primer puesto en modo rally.", "type": "bronze", "missable": false, "online": true, "guide": "Actúa como copiloto en una carrera de rally e indica el camino al conductor mediante flechas o micro para ganar." },
+    { "id": "gta_34", "chapter": "Online", "name": "Disfruta de la estancia", "desc": "Participa en todo lo que Los Santos puede ofrecer.", "type": "bronze", "missable": false, "online": true, "guide": "Haz un pulso, dardos, golf, tenis, galería de tiro, un tatuaje, un corte de pelo, compra ropa y pide un baile privado." },
+    { "id": "gta_35", "chapter": "Online", "name": "Condecorado", "desc": "Gana 30 premios de platino.", "type": "silver", "missable": false, "online": true, "guide": "Requiere completar 30 desafíos de galardones en el menú de estadísticas internas del online." },
 
-      // MISCELÁNEA
-      { id: "gta_37", chapter: "Varios", name: "Tunea mi arma", desc: "Modifica completamente un arma.", type: "bronze", missable: false, online: false, guide: "Ve a Ammu-Nation." },
-      { id: "gta_38", chapter: "Varios", name: "Los Santos Customs", desc: "Modifica completamente un vehículo.", type: "bronze", missable: false, online: false, guide: "Llévalo a LSC." },
-      { id: "gta_39", chapter: "Varios", name: "Como pez fuera del agua", desc: "Vas a necesitar un barco más grande.", type: "bronze", missable: false, online: false, guide: "Coge una lancha y adéntrate en el océano hasta que aparezca un tiburón." },
-      { id: "gta_40", chapter: "Varios", name: "Despilfarro", desc: "Gasta 200 millones entre los tres personajes.", type: "bronze", missable: false, online: false, guide: "Necesitarás haber completado el juego y la bolsa." },
-      { id: "gta_41", chapter: "Varios", name: "Escalada bélica", desc: "Compra el hangar del aeródromo de McKenzie.", type: "bronze", missable: false, online: false, guide: "Misiones de contrabando de Trevor." },
-      { id: "gta_42", chapter: "Varios", name: "Ejército de tres hombres", desc: "Sobrevive 3 minutos con 3 estrellas con los 3 personajes juntos.", type: "bronze", missable: false, online: false, guide: "Sube a una zona alta con los tres y espera." },
-      { id: "gta_43", chapter: "Varios", name: "Exhibicionista", desc: "Completa todos los saltos acrobáticos.", type: "bronze", missable: false, online: false, guide: "Mapa de saltos obligatorio." },
-      { id: "gta_44", chapter: "Varios", name: "Guerra y paz a la carrera", desc: "Compra Downtown Cab Co. y haz una carrera privada.", type: "bronze", missable: false, online: false, guide: "Franklin puede comprarla." },
-    ]
-  },
+    // MISCELÁNEA / VARIOS
+    { "id": "gta_36", "chapter": "Varios", "name": "Los Santos Customs", "desc": "Modifica completamente un vehículo.", "type": "bronze", "missable": false, "online": false, "guide": "Compra una modificación para cada categoría disponible en un coche que lo permita." },
+    { "id": "gta_37", "chapter": "Varios", "name": "Como pez fuera del agua", "desc": "Vas a necesitar un barco más grande.", "type": "bronze", "missable": false, "online": false, "guide": "Coge una lancha o nada hacia el océano profundo hasta que aparezca un tiburón en el minimapa y te devore." },
+    { "id": "gta_38", "chapter": "Varios", "name": "Despilfarro", "desc": "Gasta 200 millones entre los tres personajes.", "type": "bronze", "missable": false, "online": false, "guide": "Compra y vende acciones masivamente en la bolsa para acumular el gasto rápido." },
+    { "id": "gta_39", "chapter": "Varios", "name": "Escalada bélica de Industrias TP", "desc": "Compra el aeródromo de McKenzie y gana la carrera armamentística.", "type": "bronze", "missable": false, "online": false, "guide": "Cómpralo con Trevor y completa los 5 tráficos de armas aéreos y 5 terrestres." },
+    { "id": "gta_40", "chapter": "Varios", "name": "Ejército de tres hombres", "desc": "Sobrevive 3 minutos con 3 estrellas con los 3 personajes juntos.", "type": "bronze", "missable": false, "online": false, "guide": "Queda con los otros dos protagonistas fuera de misiones, consigue 3 estrellas de búsqueda y aguanta el tiempo requerido." },
+    { "id": "gta_41", "chapter": "Varios", "name": "Exhibicionista", "desc": "Completa todos los saltos acrobáticos.", "type": "bronze", "missable": false, "online": false, "guide": "Realiza correctamente los 50 saltos únicos repartidos por San Andreas." },
+    { "id": "gta_42", "chapter": "Varios", "name": "Guerra y paz a la carrera", "desc": "Compra Downtown Cab Co. y haz una carrera privada.", "type": "bronze", "missable": false, "online": false, "guide": "Cómprala con Franklin y espera a que el gerente te llame para realizar una misión de servicio VIP." },
+    { "id": "gta_43", "chapter": "Varios", "name": "Por un pelo", "desc": "Completa todos los desafíos bajo el puente y de vuelo a cuchillo.", "type": "silver", "missable": false, "online": false, "guide": "Pasa por debajo de los 50 puentes y completa los 15 vuelos a cuchillo entre edificios." },
+    { "id": "gta_44", "chapter": "Varios", "name": "Acólito altruista", "desc": "Entrega una víctima desprevenida a la secta altruista.", "type": "bronze", "missable": true, "online": false, "guide": "Con Trevor, recoge a un autoestopista de un evento aleatorio y llévalo al campamento de la secta en la montaña." },
+    { "id": "gta_45", "chapter": "Varios", "name": "Se busca vivo o muerto", "desc": "Entrega a un objetivo de los fugitivos con vida.", "type": "bronze", "missable": true, "online": false, "guide": "Completa un encargo de Maude atrapando al fugitivo vivo usando la pistola táser o a golpes." },
+
+    // EDITOR DE ROCKSTAR (Exclusivos de PS4 / PS5 / PC)
+    { "id": "gta_46", "chapter": "Editor de Rockstar", "name": "Director novel", "desc": "Entra en el modo Director por primera vez como un actor desbloqueado.", "type": "bronze", "missable": false, "online": false, "guide": "Accede al modo Director desde el menú de pausa y entra al mundo con cualquier actor disponible." },
+    { "id": "gta_47", "chapter": "Editor de Rockstar", "name": "Cazalocalizaciones", "desc": "Visita todas las ubicaciones en el modo Director.", "type": "bronze", "missable": false, "online": false, "guide": "Utiliza el menú de teletransporte para pasar por los 27 lugares preestablecidos del modo Director." },
+    { "id": "gta_48", "chapter": "Editor de Rockstar", "name": "Actor de método", "desc": "Entra en el modo Director usando cualquiera de tus personajes de GTA Online.", "type": "bronze", "missable": false, "online": true, "guide": "Selecciona a tu personaje multijugador en la sección de actores del modo Director." },
+    { "id": "gta_49", "chapter": "Editor de Rockstar", "name": "Amante de los animales", "desc": "Entra en el modo Director como un animal por primera vez.", "type": "bronze", "missable": false, "online": false, "guide": "Come una planta de peyote en el modo historia para desbloquear un animal y elígelo en el menú del director." },
+    { "id": "gta_50", "chapter": "Editor de Rockstar", "name": "Cult Movie", "desc": "Entra en el modo Director como Cris Formage.", "type": "bronze", "missable": false, "online": false, "guide": "Completa el hilo de misiones de Epsilon en el modo historia y selecciona a Cris en el menú de actores especiales." },
+    { "id": "gta_51", "chapter": "Editor de Rockstar", "name": "Obra de conjunto", "desc": "Desbloquea a todos los personajes del modo Historia y entra en el modo Director con uno de ellos.", "type": "bronze", "missable": false, "online": false, "guide": "Completa la campaña principal para desbloquear toda la plantilla en la sección de personajes de la historia." },
+    { "id": "gta_52", "chapter": "Editor de Rockstar", "name": "Humanos de Los Santos", "desc": "Desbloquea a todos los personajes especiales y entra en el modo Director con uno de ellos.", "type": "bronze", "missable": false, "online": false, "guide": "Habla e interactúa con los 12 personajes especiales del modo historia (mimos, predicadores, etc.) para desbloquearlos." },
+    { "id": "gta_53", "chapter": "Editor de Rockstar", "name": "Visionario de Vinewood", "desc": "Crea y exporta un vídeo usando el Editor de Rockstar.", "type": "bronze", "missable": false, "online": false, "guide": "Graba unos clips de juego manteniendo pulsado el botón correspondiente, edítalos en la línea de tiempo y expórtalos." },
+    { "id": "gta_54", "chapter": "Editor de Rockstar", "name": "Majestuoso", "desc": "Crea y exporta 10 vídeos usando el Editor de Rockstar.", "type": "silver", "missable": false, "online": false, "guide": "Repite el proceso de creación y exportación de pequeños proyectos de vídeo 10 veces." },
+    { "id": "gta_55", "chapter": "Editor de Rockstar", "name": "Criptozoólogo", "desc": "Desbloquea todos los animales terrestres y marinos para el modo Director.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra las 27 plantas de peyote del mapa para desbloquear todos los animales (no es necesario el peyote especial de Bigfoot)." }
+  ]
+},
   {
   id: "cyberpunk2077",
   slug: "cyberpunk-2077",
@@ -933,6 +946,440 @@ const GAMES = [
       missable: false,
       online: false
     }
+  ]
+},
+ {
+  "id": "kh3",
+  "slug": "kingdom-hearts-iii",
+  "title": "Kingdom Hearts III",
+  "platform": "PS4 / Xbox One / PC / Nintendo Switch",
+  "cover": "img/kh3.jpg",
+  "emoji": "🔑",
+  "totalTrophies": 46,
+  "difficulty": "4/10",
+  "minHours": 50,
+  "hasMissable": false,
+  "tags": ["action-rpg", "disney", "square-enix", "fantasía"],
+  "trophies": [
+    // PLATINO
+    { "id": "kh3_01", "chapter": "Platino", "name": "Maestro de KINGDOM HEARTS III", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "Se desbloquea automáticamente tras conseguir los otros 45 trofeos del juego base." },
+
+    // HISTORIA
+    { "id": "kh3_02", "chapter": "Historia", "name": "Un nuevo viaje", "desc": "Completa la historia en el Olimpo.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia tras completar el mundo de Hércules." },
+    { "id": "kh3_03", "chapter": "Historia", "name": "Choque de dioses", "desc": "Completa la historia en Villa Crepúsculo.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia." },
+    { "id": "kh3_04", "chapter": "Historia", "name": "Un deseo compartido", "desc": "Completa la historia en la Caja de juguetes.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia tras completar el mundo de Toy Story." },
+    { "id": "kh3_05", "chapter": "Historia", "name": "Una amistad inquebrantable", "desc": "Completa la historia en el Reino de Corona.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia tras completar el mundo de Enredados." },
+    { "id": "kh3_06", "chapter": "Historia", "name": "El corazón resiliente", "desc": "Completa la historia en Monstruópolis.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia tras completar el mundo de Monstruos S.A." },
+    { "id": "kh3_07", "chapter": "Historia", "name": "Orgullo de un héroe", "desc": "Completa la historia en Arendelle.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia tras completar el mundo de Frozen." },
+    { "id": "kh3_08", "chapter": "Historia", "name": "En el corazón de un rayo de sol", "desc": "Completa la historia en el Caribe.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia tras completar el mundo de Piratas del Caribe." },
+    { "id": "kh3_09", "chapter": "Historia", "name": "Amor verdadero", "desc": "Completa la historia en San Fransokyo.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia tras completar el mundo de Big Hero 6." },
+    { "id": "kh3_10", "chapter": "Historia", "name": "La promesa", "desc": "Completa la historia en el Bosque de los Cien Acres.", "type": "bronze", "missable": false, "online": false, "guide": "Mundo opcional de Winnie the Pooh accesible desde el libro en la cocina de Merlín (Villa Crepúsculo)." },
+    { "id": "kh3_11", "chapter": "Historia", "name": "El final de todo", "desc": "Completa la historia en la Necrópolis de las Llaves Espada.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia en los compases finales." },
+    { "id": "kh3_12", "chapter": "Historia", "name": "Choque de reyes", "desc": "Completa la historia en el Mundo Final.", "type": "bronze", "missable": false, "online": false, "guide": "Automático por la historia antes del jefe final." },
+    { "id": "kh3_13", "chapter": "Historia", "name": "El fin del viaje", "desc": "Completa el juego y mira el final.", "type": "gold", "missable": false, "online": false, "guide": "Completa el juego derrotando al jefe final en cualquier dificultad." },
+
+    // COLECCIONABLES Y DIARIO (GUMMIPHONE)
+    { "id": "kh3_14", "chapter": "Coleccionables", "name": "Reyes ocultos", "desc": "Encuentra todos los portafortunas.", "type": "gold", "missable": false, "online": false, "guide": "Debes fotografiar los 90 símbolos con forma de Mickey Mouse repartidos por los mundos." },
+    { "id": "kh3_15", "chapter": "Coleccionables", "name": "No dejes piedra sin remover", "desc": "Abre todos los cofres del tesoro.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra y abre absolutamente todos los cofres del juego. Puedes revisar el progreso en el Gummiphone." },
+    { "id": "kh3_16", "chapter": "Coleccionables", "name": "Conoce a tu enemigo", "desc": "Completa la sección de Adversarios del Gummiphone.", "type": "bronze", "missable": false, "online": false, "guide": "Derrota a todos los tipos de Sincorazón, Incorpóreos y Nescientes del juego, incluyendo los de los portales de batalla post-game." },
+    { "id": "kh3_17", "chapter": "Coleccionables", "name": "Un récord tras otro", "desc": "Completa la sección de Récords de juego del Gummiphone.", "type": "silver", "missable": false, "online": false, "guide": "Registra puntuaciones en todos los minijuegos, misiones de los Siete Flantásticos y comandos de atracciones/vínculos." },
+    { "id": "kh3_18", "chapter": "Coleccionables", "name": "Maestro de los flanes", "desc": "Completa las misiones de los Siete Flantásticos.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra los 7 flanes con fruta en su cabeza y completa sus minijuegos alcanzando la puntuación para obtener su ingrediente especial." },
+
+    // DESARROLLO Y FORJA
+    { "id": "kh3_19", "chapter": "Desarrollo", "name": "Nivel máximo", "desc": "Lleva a Sora al nivel 99.", "type": "silver", "missable": false, "online": false, "guide": "Equípate accesorios que aumenten la EXP y farmea en los portales de batalla avanzados del post-game." },
+    { "id": "kh3_20", "chapter": "Desarrollo", "name": "Orfebre", "desc": "Sube una Llave Espada al nivel máximo.", "type": "bronze", "missable": false, "online": false, "guide": "Mejora cualquier Llave Espada hasta el nivel 10 en la tienda del Moguri usando materiales de síntesis." },
+    { "id": "kh3_21", "chapter": "Desarrollo", "name": "Arma Artema", "desc": "Sintetiza el Arma Artema.", "type": "silver", "missable": false, "online": false, "guide": "Requiere conseguir la receta y los materiales más raros, incluyendo los 7 Orichalcum+ repartidos por el juego." },
+    { "id": "kh3_22", "chapter": "Desarrollo", "name": "Sintetizador", "desc": "Completa la lista de síntesis de la tienda de los moguris.", "type": "silver", "missable": false, "online": false, "guide": "Debes fabricar al menos una unidad de cada objeto disponible en la sección de síntesis." },
+
+    // COCINA Y FOTOS
+    { "id": "kh3_23", "chapter": "Cocina", "name": "Cornucopia", "desc": "Reúne todos los tipos de ingredientes del juego.", "type": "bronze", "missable": false, "online": false, "guide": "Recoge todos los alimentos del mapa y los premios de los flanes." },
+    { "id": "kh3_24", "chapter": "Cocina", "name": "Menú completo", "desc": "Consigue tu primer \"Excelente\" al cocinar.", "type": "bronze", "missable": false, "online": false, "guide": "Cocina con éxito un plato en el restaurante del Chef Remy en Villa Crepúsculo." },
+    { "id": "kh3_25", "chapter": "Cocina", "name": "Gran chef", "desc": "Consigue una calificación de \"Excelente\" en todos los platos.", "type": "silver", "missable": false, "online": false, "guide": "Consigue la máxima nota en las 28 recetas disponibles (menú normal y menú especial)." },
+    { "id": "kh3_26", "chapter": "Fotos", "name": "¡Patata!", "desc": "Haz tu primera foto con el Gummiphone.", "type": "bronze", "missable": false, "online": false, "guide": "Usa la cámara del teléfono por primera vez en el modo libre." },
+    { "id": "kh3_27", "chapter": "Fotos", "name": "Recuerdos imborrables", "desc": "Guarda un total de 50 fotos.", "type": "bronze", "missable": false, "online": false, "guide": "Haz 50 capturas cualesquiera y consérvalas en el álbum del Gummiphone." },
+
+    // MINIJUEGOS Y MUNDOS
+    { "id": "kh3_28", "chapter": "Minijuegos", "name": "Memoria muscular", "desc": "Consigue la puntuación más alta en todos los juegos del Reino Clásico.", "type": "silver", "missable": false, "online": false, "guide": "Consigue y juega los 23 minijuegos retro LCD. Solo necesitas registrar una puntuación (no hace falta superar un récord alto)." },
+    { "id": "kh3_29", "chapter": "Minijuegos", "name": "Centurión", "desc": "Consigue al menos 12 000 000 de puntos en Verum Rex: Beat of Lead.", "type": "bronze", "missable": false, "online": false, "guide": "Minijuego en la Juguetería. Consigue combos altos destruyendo robots gigantes sin perder el multiplicador." },
+    { "id": "kh3_30", "chapter": "Minijuegos", "name": "Bailarín festivo", "desc": "Consigue al menos 70 000 puntos en la Danza festiva.", "type": "bronze", "missable": false, "online": false, "guide": "Minijuego de baile en el Reino de Corona. Cambia de pareja rápido e interactúa con los barriles para maximizar los puntos." },
+    { "id": "kh3_31", "chapter": "Minijuegos", "name": "Destructor de escudos", "desc": "Consigue al menos 600 000 puntos en el Deslizamiento alpino.", "type": "bronze", "missable": false, "online": false, "guide": "Minijuego de nieve en Arendelle. Memoriza la ruta, recoge los cristales y evita recibir daño para mantener el multiplicador." },
+    { "id": "kh3_32", "chapter": "Minijuegos", "name": "Minero de datos", "desc": "Consigue el rango A en ambos circuitos del Cazaluz.", "type": "bronze", "missable": false, "online": false, "guide": "Minijuegos de carrera aérea y terrestre en San Fransokyo." },
+    { "id": "kh3_33", "chapter": "Mundos", "name": "Acorazado", "desc": "Mejora al máximo el Leviatán.", "type": "bronze", "missable": false, "online": false, "guide": "Sube tu barco en El Caribe hasta el nivel 9 recolectando cangrejos blancos por las islas." },
+    { "id": "kh3_34", "chapter": "Mundos", "name": "Verdadero capitán", "desc": "Hunde 200 barcos enemigos en el Caribe.", "type": "bronze", "missable": false, "online": false, "guide": "Navega por las aguas de este mundo destruyendo todas las flotas Sincorazón que encuentres." },
+
+    // NAVE GUMI
+    { "id": "kh3_35", "chapter": "Nave Gumi", "name": "Gumi-rastreador", "desc": "Consigue 20 planos de naves gumi únicos.", "type": "bronze", "missable": false, "online": false, "guide": "Se obtienen derrotando ciertos jefes en el espacio, fotografiando constelaciones o abriendo cristales gumi." },
+    { "id": "kh3_36", "chapter": "Nave Gumi", "name": "Astrónomo", "desc": "Fotografía las 9 constelaciones desde la nave gumi.", "type": "bronze", "missable": false, "online": false, "guide": "Busca las agrupaciones de estrellas con formas de personajes en los tres mapas del espacio y hazles una foto clara." },
+    { "id": "kh3_37", "chapter": "Nave Gumi", "name": "Cazaestrellas", "desc": "Derrota a 1000 enemigos con la nave gumi.", "type": "bronze", "missable": false, "online": false, "guide": "Trofeo acumulativo completando misiones de combate espacial." },
+    { "id": "kh3_38", "chapter": "Nave Gumi", "name": "Termosfera", "desc": "Derrota al Schwarzgeist, la amenaza del espacio gumi.", "type": "silver", "missable": false, "online": false, "guide": "Jefe secreto espacial oculto dentro del gran torbellino verde del segundo mapa. Requiere una nave con alta velocidad." },
+
+    // COMBATE
+    { "id": "kh3_39", "chapter": "Combate", "name": "Novato", "desc": "Derrota a 1000 enemigos.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo a lo largo de tu partida." },
+    { "id": "kh3_40", "chapter": "Combate", "name": "Caballero", "desc": "Derrota a 3000 enemigos.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo a lo largo de tu partida." },
+    { "id": "kh3_41", "chapter": "Combate", "name": "Alfil", "desc": "Derrota a 5000 enemigos.", "type": "bronze", "missable": false, "online": false, "guide": "Saldrá solo mientras buscas el 100% del juego." },
+    { "id": "kh3_42", "chapter": "Combate", "name": "Mago maestro", "desc": "Lanza una gran magia por primera vez.", "type": "bronze", "missable": false, "online": false, "guide": "Usa comandos de situación mágicos de nivel avanzado (como Piro++ o Electro++)." },
+    { "id": "kh3_43", "chapter": "Combate", "name": "Caballero de la Mesa Redonda", "desc": "Usa una atracción por primera vez.", "type": "bronze", "missable": false, "online": false, "guide": "Utiliza cualquier comando de situación verde con forma de atracción de feria (como las tazas o el barco pirata)." },
+    { "id": "kh3_44", "chapter": "Combate", "name": "Corazones como uno solo", "desc": "Utiliza todos los vínculos al menos una vez.", "type": "bronze", "missable": false, "online": false, "guide": "Invoca a todos los Nexos disponibles del juego (Simba, Ariel, Rompe-Ralph, Meow Wow y Stitch)." },
+    { "id": "kh3_45", "chapter": "Combate", "name": "Fuerza cambiante", "desc": "Realiza una transformación de Llave Espada por primera vez.", "type": "bronze", "missable": false, "online": false, "guide": "Ataca continuamente hasta activar y usar el cambio de forma de tu arma principal." },
+    { "id": "kh3_46", "chapter": "Combate", "name": "Tiro certero", "desc": "Ejecuta un tiro certero por primera vez.", "type": "bronze", "missable": false, "online": false, "guide": "Mantén pulsado el botón de apuntado (R5 / RB) fijando objetivos y dispara consumiendo la barra de enfoque." }
+  ]
+},
+ {
+  "id": "uncharted1",
+  "slug": "uncharted-el-tesoro-de-drake",
+  "title": "Uncharted: El tesoro de Drake",
+  "platform": "PS3 / PS4",
+  "cover": "img/uncharted1.jpg",
+  "emoji": "🧭",
+  "totalTrophies": 46,
+  "difficulty": "5/10",
+  "minHours": 15,
+  "hasMissable": false,
+  "tags": ["acción", "aventura", "lineal", "disparos"],
+  "trophies": [
+    // PLATINO
+    { "id": "unch_01", "chapter": "Platino", "name": "¡Platino!", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "Desbloquea todos los demás trofeos del juego base." },
+
+    // HISTORIA Y DIFICULTAD
+    { "id": "unch_02", "chapter": "Historia", "name": "¡Completado! - Fácil", "desc": "Completa el juego en el modo Fácil.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas el juego en una dificultad superior." },
+    { "id": "unch_03", "chapter": "Historia", "name": "¡Completado! - Normal", "desc": "Completa el juego en el modo Normal.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas el juego en una dificultad superior." },
+    { "id": "unch_04", "chapter": "Historia", "name": "¡Completado! - Difícil", "desc": "Completa el juego en el modo Difícil.", "type": "silver", "missable": false, "online": false, "guide": "Completa la campaña en Difícil. Desbloquea el modo Aplastante." },
+    { "id": "unch_05", "chapter": "Historia", "name": "¡Completado! - Aplastante", "desc": "Completa el juego en el modo Aplastante.", "type": "gold", "missable": false, "online": false, "guide": "La máxima dificultad del juego base. Usa las coberturas constantemente y prioriza los tiros a la cabeza." },
+
+    // COLECCIONABLES
+    { "id": "unch_06", "chapter": "Coleccionables", "name": "Primer tesoro", "desc": "Encuentra un tesoro.", "type": "bronze", "missable": false, "online": false, "guide": "Encuentra cualquiera de los destellos brillantes repartidos por los escenarios." },
+    { "id": "unch_07", "chapter": "Coleccionables", "name": "Cazador de tesoros novato", "desc": "Encuentra 20 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Puedes seguir guías por capítulos o usar la selección de capítulos si te dejas alguno." },
+    { "id": "unch_08", "chapter": "Coleccionables", "name": "Cazador de tesoros profesional", "desc": "Encuentra 40 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Progreso acumulable entre partidas." },
+    { "id": "unch_09", "chapter": "Coleccionables", "name": "Maestro cazador de tesoros", "desc": "Encuentra los 60 tesoros.", "type": "silver", "missable": false, "online": false, "guide": "Consigue todos los tesoros estándar del juego." },
+    { "id": "unch_10", "chapter": "Coleccionables", "name": "Buscador de reliquias", "desc": "Encuentra la reliquia extraña.", "type": "bronze", "missable": false, "online": false, "guide": "Se encuentra en el Capítulo 5 (La Fortaleza), en una esquina de las alcantarillas. Tiene forma de huevo de Jak & Daxter." },
+
+    // COMBATE
+    { "id": "unch_11", "chapter": "Combate", "name": "10 tiros a la cabeza", "desc": "Elimina a 10 enemigos con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo apuntando a la cabeza de los enemigos." },
+    { "id": "unch_12", "chapter": "Combate", "name": "30 tiros a la cabeza", "desc": "Elimina a 30 enemigos con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo a lo largo de la historia." },
+    { "id": "unch_13", "chapter": "Combate", "name": "100 tiros a la cabeza", "desc": "Elimina a 100 enemigos con tiros a la cabeza.", "type": "silver", "missable": false, "online": false, "guide": "Saldrá de forma natural buscando el trofeo de dificultad Aplastante." },
+    { "id": "unch_14", "chapter": "Combate", "name": "Tirador experto", "desc": "Elimina a 5 enemigos consecutivamente con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Debes encadenar 5 bajas seguidas a la cabeza sin fallar ni matar con tiros al cuerpo." },
+    { "id": "unch_15", "chapter": "Combate", "name": "Tirador de primera", "desc": "Elimina a 10 enemigos consecutivamente con tiros a la cabeza.", "type": "silver", "missable": false, "online": false, "guide": "Recomendable hacerlo en dificultad Fácil utilizando armas precisas como la pistola de un solo tiro." },
+    { "id": "unch_16", "chapter": "Combate", "name": "Alborotador", "desc": "Elimina a 20 enemigos con combates cuerpo a cuerpo.", "type": "bronze", "missable": false, "online": false, "guide": "Derrota a enemigos usando el botón de golpe." },
+    { "id": "unch_17", "chapter": "Combate", "name": "Buscapleitos", "desc": "Elimina a 50 enemigos con combates cuerpo a cuerpo.", "type": "silver", "missable": false, "online": false, "guide": "Acumulativo golpeando enemigos a corta distancia." },
+    { "id": "unch_18", "chapter": "Combate", "name": "Superalborotador", "desc": "Elimina a 5 enemigos con combate cuerpo a cuerpo consecutivamente.", "type": "bronze", "missable": false, "online": false, "guide": "Elimina a 5 rivales seguidos a golpes sin usar armas de fuego en el proceso." },
+    { "id": "unch_19", "chapter": "Combate", "name": "Atacante brutal", "desc": "Elimina a 20 enemigos con el Combo Brutal.", "type": "bronze", "missable": false, "online": false, "guide": "El combo brutal se realiza presionando Cuadrado, Triángulo, Cuadrado de forma rítmica." },
+    { "id": "unch_20", "chapter": "Combate", "name": "Experto en ataque brutal", "desc": "Elimina a 5 enemigos seguidos con el Combo Brutal.", "type": "bronze", "missable": false, "online": false, "guide": "Realiza el combo rítmico a 5 enemigos de manera consecutiva." },
+    { "id": "unch_21", "chapter": "Combate", "name": "Puño de acero", "desc": "Elimina a 5 enemigos de un solo puñetazo, después de debilitarlos con disparos.", "type": "bronze", "missable": false, "online": false, "guide": "Dispara desde la cadera a un enemigo cercano una vez y luego presiona Cuadrado inmediatamente." },
+    { "id": "unch_22", "chapter": "Combate", "name": "Experto en puño de acero", "desc": "Elimina a 5 enemigos de un solo puñetazo consecutivamente, tras debilitarlos con disparos.", "type": "silver", "missable": false, "online": false, "guide": "Repite la técnica de un tiro desde la cadera y un puñetazo con 5 enemigos seguidos sin fallar." },
+    { "id": "unch_23", "chapter": "Combate", "name": "¡Atacante sigiloso!", "desc": "Elimina a 20 enemigos atacando por la espalda.", "type": "bronze", "missable": false, "online": false, "guide": "Acércate por detrás a enemigos distraídos y presiona el botón de ataque." },
+    { "id": "unch_24", "chapter": "Combate", "name": "Verdugo", "desc": "Elimina a 10 enemigos apuntando a ciegas desde una cobertura.", "type": "bronze", "missable": false, "online": false, "guide": "Pégate a una pared u objeto y dispara con R2 sin pulsar el botón de apuntar (L2)." },
+    { "id": "unch_25", "chapter": "Combate", "name": "Verdugo con granadas", "desc": "Elimina a 10 enemigos con granadas apuntando a ciegas desde una cobertura.", "type": "bronze", "missable": false, "online": false, "guide": "Lanza granadas desde cobertura pasiva sin asomarte." },
+    { "id": "unch_26", "chapter": "Combate", "name": "Tirador temerario", "desc": "Elimina a 20 enemigos disparando desde la cadera (sin apuntar).", "type": "bronze", "missable": false, "online": false, "guide": "Camina hacia los enemigos y dispara directamente solo con R2." },
+    { "id": "unch_27", "chapter": "Combate", "name": "Tirador colgado", "desc": "Elimina a 20 enemigos disparando colgado de un saliente.", "type": "bronze", "missable": false, "online": false, "guide": "Suéstate de cualquier cornisa o cuerda y elimina enemigos usando tu arma de mano." },
+    { "id": "unch_28", "chapter": "Combate", "name": "Verdugo colgado", "desc": "Elimina a 10 enemigos con granadas colgado de un saliente.", "type": "bronze", "missable": false, "online": false, "guide": "Apunta y lanza granadas mientras cuelgas de una plataforma." },
+    { "id": "unch_29", "chapter": "Combate", "name": "Coleccionista de granadas", "desc": "Elimina a 3 enemigos con una sola granada.", "type": "bronze", "missable": false, "online": false, "guide": "Busca grupos apretados de enemigos, como los que aparecen bajando de camiones en los primeros capítulos." },
+    { "id": "unch_30", "chapter": "Combate", "name": "Superviviente", "desc": "Elimina a 50 enemigos consecutivamente sin morir.", "type": "silver", "missable": false, "online": false, "guide": "Se puede hacer fácilmente combinando capítulos en dificultad Fácil de manera segura." },
+
+    // ARMAS
+    { "id": "unch_31", "chapter": "Armas", "name": "20 muertes: PM - 9mm", "desc": "Elimina a 20 enemigos con la PM - 9mm.", "type": "bronze", "missable": false, "online": false, "guide": "Pistola estándar inicial." },
+    { "id": "unch_32", "chapter": "Armas", "name": "20 muertes: 92FS - 9mm", "desc": "Elimina a 20 enemigos con la 92FS - 9mm.", "type": "bronze", "missable": false, "online": false, "guide": "Pistola común a lo largo del juego." },
+    { "id": "unch_33", "chapter": "Armas", "name": "50 muertes: AK-47", "desc": "Elimina a 50 enemigos con el AK-47.", "type": "bronze", "missable": false, "online": false, "guide": "Rifle de asalto estándar usado por los mercenarios." },
+    { "id": "unch_34", "chapter": "Armas", "name": "50 muertes: M4", "desc": "Elimina a 50 enemigos con el M4.", "type": "bronze", "missable": false, "online": false, "guide": "Aparece en los capítulos de la segunda mitad del juego." },
+    { "id": "unch_35", "chapter": "Armas", "name": "30 muertes: Desert - 5", "desc": "Elimina a 30 enemigos con la Desert - 5.", "type": "bronze", "missable": false, "online": false, "guide": "Pistola pesada con mira láser que llevan algunos francotiradores." },
+    { "id": "unch_36", "chapter": "Armas", "name": "30 muertes: Wes - 44", "desc": "Elimina a 30 enemigos con la Wes - 44.", "type": "bronze", "missable": false, "online": false, "guide": "Revólver de gran potencia disponible en capítulos avanzados." },
+    { "id": "unch_37", "chapter": "Armas", "name": "30 muertes: Moss - 12", "desc": "Elimina a 30 enemigos con la Moss - 12.", "type": "bronze", "missable": false, "online": false, "guide": "Escopeta de corredera para distancias cortas." },
+    { "id": "unch_38", "chapter": "Armas", "name": "30 muertes: SAS - 12", "desc": "Elimina a 30 enemigos con la SAS - 12.", "type": "bronze", "missable": false, "online": false, "guide": "Escopeta semiautomática usada por tropas pesadas." },
+    { "id": "unch_39", "chapter": "Armas", "name": "20 muertes: M79", "desc": "Elimina a 20 enemigos con el M79.", "type": "bronze", "missable": false, "online": false, "guide": "Lanzagranadas de mano. Muy útil contra grupos." },
+    { "id": "unch_40", "chapter": "Armas", "name": "20 muertes: Micro - 9mm", "desc": "Elimina a 20 enemigos con la Micro - 9mm.", "type": "bronze", "missable": false, "online": false, "guide": "Subfusil de una mano usado comúnmente en persecuciones." },
+    { "id": "unch_41", "chapter": "Armas", "name": "20 muertes: Francotirador Dragón", "desc": "Elimina a 20 enemigos con el Francotirador Dragón.", "type": "bronze", "missable": false, "online": false, "guide": "Rifle de precisión con mira telescópica." },
+    { "id": "unch_42", "chapter": "Armas", "name": "30 muertes: MP40", "desc": "Elimina a 30 enemigos con el MP40.", "type": "bronze", "missable": false, "online": false, "guide": "Arma clásica encontrada en los capítulos del búnker." },
+
+    // EXTRAS (Colección Nathan Drake / PS4)
+    { "id": "unch_43", "chapter": "Extras", "name": "Exploración exprés", "desc": "Completa un capítulo en el modo Carrera continua.", "type": "bronze", "missable": false, "online": false, "guide": "Activa el modo contrarreloj al iniciar cualquier capítulo corto de la campaña." },
+    { "id": "unch_44", "chapter": "Extras", "name": "Cazador de fotos insólito", "desc": "Activa el modo Foto justo después de encontrar un tesoro.", "type": "bronze", "missable": false, "online": false, "guide": "Recoge un tesoro y abre de inmediato el menú para activar la cámara del juego." },
+    { "id": "unch_45", "chapter": "Extras", "name": "Cosplay a la carrera", "desc": "Completa un capítulo usando un aspecto alternativo.", "type": "bronze", "missable": false, "online": false, "guide": "Cambia el traje de Drake desde el menú de recompensas y completa cualquier nivel." },
+    { "id": "unch_46", "chapter": "Extras", "name": "Gula de trofeos", "desc": "Consigue todas las estadísticas de bajas con armas.", "type": "bronze", "missable": false, "online": false, "guide": "Se consigue automáticamente al completar los trofeos individuales de eliminación por armas." }
+  ]
+},
+ {
+  "id": "uncharted2",
+  "slug": "uncharted-2-among-thieves",
+  "title": "Uncharted 2: El reino de los ladrones",
+  "platform": "PS3 / PS4",
+  "cover": "img/uncharted2.jpg",
+  "emoji": "🏔️",
+  "totalTrophies": 45,
+  "difficulty": "5/10",
+  "minHours": 20,
+  "hasMissable": false,
+  "tags": ["acción", "aventura", "lineal", "disparos"],
+  "trophies": [
+    // PLATINO
+    { "id": "unch2_01", "chapter": "Platino", "name": "¡Platino!", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "Se desbloquea tras conseguir todos los demás trofeos del juego base." },
+
+    // HISTORIA Y DIFICULTAD
+    { "id": "unch2_02", "chapter": "Historia", "name": "¡Completado! - Fácil", "desc": "Completa el juego en el modo Fácil.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas la campaña en una dificultad superior." },
+    { "id": "unch2_03", "chapter": "Historia", "name": "¡Completado! - Normal", "desc": "Completa el juego en el modo Normal.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas la campaña en una dificultad superior." },
+    { "id": "unch2_04", "chapter": "Historia", "name": "¡Completado! - Difícil", "desc": "Completa el juego en el modo Difícil.", "type": "silver", "missable": false, "online": false, "guide": "Completa la historia en Difícil. Al hacerlo se desbloqueará el modo Aplastante." },
+    { "id": "unch2_05", "chapter": "Historia", "name": "¡Completado! - Aplastante", "desc": "Completa el juego en el modo Aplastante.", "type": "gold", "missable": false, "online": false, "guide": "La dificultad reina del juego. Usa coberturas con cabeza, abusa del sigilo siempre que puedas y prioriza los tiros a la cabeza." },
+
+    // COLECCIONABLES
+    { "id": "unch2_06", "chapter": "Coleccionables", "name": "Primer tesoro", "desc": "Encuentra un tesoro.", "type": "bronze", "missable": false, "online": false, "guide": "Recoge tu primer tesoro brillante del suelo." },
+    { "id": "unch2_07", "chapter": "Coleccionables", "name": "Cazador de tesoros novato", "desc": "Encuentra 20 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 20 tesoros. Puedes revisar tu progreso en el menú de estadísticas." },
+    { "id": "unch2_08", "chapter": "Coleccionables", "name": "Cazador de tesoros competente", "desc": "Encuentra 40 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 40 tesoros acumulados." },
+    { "id": "unch2_09", "chapter": "Coleccionables", "name": "Cazador de tesoros experto", "desc": "Encuentra 60 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 60 tesoros acumulados." },
+    { "id": "unch2_10", "chapter": "Coleccionables", "name": "Cazador de tesoros profesional", "desc": "Encuentra 80 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 80 tesoros acumulados." },
+    { "id": "unch2_11", "chapter": "Coleccionables", "name": "Maestro cazador de tesoros", "desc": "Encuentra los 100 tesoros.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra todos los tesoros normales del juego. Puedes usar la selección de capítulos si te falta alguno." },
+    { "id": "unch2_12", "chapter": "Coleccionables", "name": "Buscador de reliquias", "desc": "Encuentra la reliquia extraña.", "type": "bronze", "missable": false, "online": false, "guide": "Se encuentra en el Capítulo 12 (Un barrio de mala muerte), en la azotea de un edificio antes de usar la tirolina. Es el clásico huevo de Jak & Daxter." },
+
+    // COMBATE
+    { "id": "unch2_13", "chapter": "Combate", "name": "20 tiros a la cabeza", "desc": "Elimina a 20 enemigos con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo apuntando a la cabeza de tus rivales." },
+    { "id": "unch2_14", "chapter": "Combate", "name": "100 tiros a la cabeza", "desc": "Elimina a 100 enemigos con tiros a la cabeza.", "type": "silver", "missable": false, "online": false, "guide": "Saldrá de forma natural durante la campaña." },
+    { "id": "unch2_15", "chapter": "Combate", "name": "Tirador experto", "desc": "Elimina a 5 enemigos consecutivamente con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 5 bajas seguidas a la cabeza sin fallar disparos intermediarios ni matar al cuerpo." },
+    { "id": "unch2_16", "chapter": "Combate", "name": "Gamberro de las carreras", "desc": "Elimina a 20 enemigos disparando desde la cadera (sin apuntar).", "type": "bronze", "missable": false, "online": false, "guide": "Dispara en movimiento usando solo el gatillo de disparo (R2/R1) a corta distancia." },
+    { "id": "unch2_17", "chapter": "Combate", "name": "Verdugo", "desc": "Elimina a 20 enemigos apuntando a ciegas desde una cobertura.", "type": "bronze", "missable": false, "online": false, "guide": "Pégate a un muro y dispara sin pulsar el botón de apuntado." },
+    { "id": "unch2_18", "chapter": "Combate", "name": "Por los pelos", "desc": "Elimina a 20 enemigos con disparos colgado de un saliente.", "type": "bronze", "missable": false, "online": false, "guide": "Quédate colgado de bordes o cornisas y abate enemigos usando tu pistola." },
+    { "id": "unch2_19", "chapter": "Combate", "name": "Camorrista", "desc": "Elimina a 20 enemigos con combates cuerpo a cuerpo.", "type": "bronze", "missable": false, "online": false, "guide": "Elimina enemigos a base de puñetazos normales." },
+    { "id": "unch2_20", "chapter": "Combate", "name": "Atacante brutal", "desc": "Elimina a 20 enemigos con el Combo Brutal.", "type": "bronze", "missable": false, "online": false, "guide": "Realiza el combo cuerpo a cuerpo presionando Cuadrado, Triángulo, Cuadrado de forma rítmica." },
+    { "id": "unch2_21", "chapter": "Combate", "name": "Experto en ataque brutal", "desc": "Elimina a 5 enemigos seguidos con el Combo Brutal.", "type": "bronze", "missable": false, "online": false, "guide": "Encadena 5 bajas seguidas realizando correctamente la secuencia rítmica." },
+    { "id": "unch2_22", "chapter": "Combate", "name": "Puño de acero", "desc": "Elimina a 20 enemigos de un solo puñetazo, después de debilitarlos con disparos.", "type": "bronze", "missable": false, "online": false, "guide": "Dispara una vez desde la cadera a un enemigo cercano y pulsa Cuadrado de inmediato para tumbarlo." },
+    { "id": "unch2_23", "chapter": "Combate", "name": "Experto en puño de acero", "desc": "Elimina a 5 enemigos de un solo puñetazo consecutivamente, tras debilitarlos con disparos.", "type": "silver", "missable": false, "online": false, "guide": "Repite la técnica del tiro desde la cadera y el puñetazo instantáneo con 5 enemigos seguidos." },
+    { "id": "unch2_24", "chapter": "Combate", "name": "Atacante sigiloso", "desc": "Elimina a 20 enemigos atacando por la espalda.", "type": "bronze", "missable": false, "online": false, "guide": "Acércate agachado por detrás y elimínalos sin levantar sospechas." },
+    { "id": "unch2_25", "chapter": "Combate", "name": "Maestro ninja", "desc": "Elimina a 50 enemigos atacando por la espalda.", "type": "silver", "missable": false, "online": false, "guide": "Aprovecha los capítulos iniciales del museo y de sigilo urbano para acumular bajas silenciosas." },
+    { "id": "unch2_26", "chapter": "Combate", "name": "Verdugo con granadas", "desc": "Elimina a 10 enemigos con granadas apuntando a ciegas desde una cobertura.", "type": "bronze", "missable": false, "online": false, "guide": "Arroja granadas desde una cobertura pasiva sin asomarte en absoluto." },
+    { "id": "unch2_27", "chapter": "Combate", "name": "Coleccionista de granadas", "desc": "Elimina a 3 enemigos con una sola explosión.", "type": "bronze", "missable": false, "online": false, "guide": "Lanza una granada al centro de un grupo concentrado de enemigos o cuando bajen de camiones." },
+    { "id": "unch2_28", "chapter": "Combate", "name": "Superviviente", "desc": "Elimina a 75 enemigos consecutivamente sin morir.", "type": "silver", "missable": false, "online": false, "guide": "Puedes hacerlo de forma segura jugando capítulos de la mitad del juego en dificultad Fácil." },
+
+    // ARMAS
+    { "id": "unch2_29", "chapter": "Armas", "name": "50 muertes: AK-47", "desc": "Elimina a 50 enemigos con el AK-47.", "type": "bronze", "missable": false, "online": false, "guide": "Rifle de asalto común en todo el juego." },
+    { "id": "unch2_30", "chapter": "Armas", "name": "50 muertes: M4", "desc": "Elimina a 50 enemigos con el M4.", "type": "bronze", "missable": false, "online": false, "guide": "Rifle automático avanzado de gran precisión." },
+    { "id": "unch2_31", "chapter": "Armas", "name": "30 muertes: FAL", "desc": "Elimina a 30 enemigos con el FAL.", "type": "bronze", "missable": false, "online": false, "guide": "Rifle que dispara ráfagas de tres balas con mira táctica." },
+    { "id": "unch2_32", "chapter": "Armas", "name": "30 muertes: Moss - 12", "desc": "Elimina a 30 enemigos con la Moss - 12.", "type": "bronze", "missable": false, "online": false, "guide": "Escopeta de corredera clásica de mano." },
+    { "id": "unch2_33", "chapter": "Armas", "name": "30 muertes: SAS - 12", "desc": "Elimina a 30 enemigos con la SAS - 12.", "type": "bronze", "missable": false, "online": false, "guide": "Escopeta semiautomática muy destructiva a corta distancia." },
+    { "id": "unch2_34", "chapter": "Armas", "name": "30 muertes: Wes - 44", "desc": "Elimina a 30 enemigos con la Wes - 44.", "type": "bronze", "missable": false, "online": false, "guide": "Revólver pesado de enorme potencia." },
+    { "id": "unch2_35", "chapter": "Armas", "name": "30 muertes: Desert - 5", "desc": "Elimina a 30 enemigos con la Desert - 5.", "type": "bronze", "missable": false, "online": false, "guide": "Pistola semiautomática de gran calibre." },
+    { "id": "unch2_36", "chapter": "Armas", "name": "20 muertes: Francotirador Dragón", "desc": "Elimina a 20 enemigos con el Francotirador Dragón.", "type": "bronze", "missable": false, "online": false, "guide": "Rifle de francotirador con mira telescópica." },
+    { "id": "unch2_37", "chapter": "Armas", "name": "20 muertes: 92FS - 9mm", "desc": "Elimina a 20 enemigos con la 92FS - 9mm.", "type": "bronze", "missable": false, "online": false, "guide": "La pistola reglamentaria por defecto." },
+    { "id": "unch2_38", "chapter": "Armas", "name": "20 muertes: Micro - 9mm", "desc": "Elimina a 20 enemigos con la Micro - 9mm.", "type": "bronze", "missable": false, "online": false, "guide": "Subfusil ligero de ráfaga rápida." },
+    { "id": "unch2_39", "chapter": "Armas", "name": "20 muertes: Pistola P08", "desc": "Elimina a 20 enemigos con la Pistola P08.", "type": "bronze", "missable": false, "online": false, "guide": "Arma clásica de mano que se encuentra en zonas específicas de la historia." },
+    { "id": "unch2_40", "chapter": "Armas", "name": "20 muertes: RPG - 7", "desc": "Elimina a 20 enemigos con el RPG - 7.", "type": "bronze", "missable": false, "online": false, "guide": "Lanzacohetes pesado. Ideal para limpiar grupos grandes." },
+    { "id": "unch2_41", "chapter": "Armas", "name": "30 muertes: M32 - Hammer", "desc": "Elimina a 30 enemigos con el M32 - Hammer.", "type": "bronze", "missable": false, "online": false, "guide": "Lanzagranadas semiautomático de tambor." },
+    { "id": "unch2_42", "chapter": "Armas", "name": "20 muertes: GAU - 19", "desc": "Elimina a 20 enemigos con la GAU - 19.", "type": "bronze", "missable": false, "online": false, "guide": "La ametralladora rotatoria pesada (Minigun). Ralentiza el movimiento de Drake pero barre a los enemigos." },
+
+    // VARIOS / ONLINE
+    { "id": "unch2_43", "chapter": "Varios", "name": "Marco Polo", "desc": "Date un baño en la piscina de la azotea del hotel.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 6 (A salvo), salta dentro de la piscina del hotel de Nepal y quédate flotando unos segundos hasta que Chloe llame a Drake." },
+    { "id": "unch2_44", "chapter": "Online", "name": "Buscador de emociones", "desc": "Completa una partida de juego competitivo multijugador.", "type": "bronze", "missable": false, "online": true, "guide": "*(Nota: Solo requerido en la lista original de PS3; eliminado en la versión Remasterizada de PS4 debido al cierre de servidores).* " },
+    { "id": "unch2_45", "chapter": "Online", "name": "Compañero de fatigas", "desc": "Completa una partida de juego cooperativo multijugador.", "type": "bronze", "missable": false, "online": true, "guide": "*(Nota: Solo requerido en la lista original de PS3; eliminado en la versión Remasterizada de PS4).* " }
+  ]
+},
+ {
+  "id": "uncharted3",
+  "slug": "uncharted-3-la-traicion-de-drake",
+  "title": "Uncharted 3: La traición de Drake",
+  "platform": "PS3 / PS4",
+  "cover": "img/uncharted3.jpg",
+  "emoji": "🏜️",
+  "totalTrophies": 43,
+  "difficulty": "5/10",
+  "minHours": 20,
+  "hasMissable": false,
+  "tags": ["acción", "aventura", "lineal", "disparos"],
+  "trophies": [
+    // PLATINO
+    { "id": "unch3_01", "chapter": "Platino", "name": "¡Platino!", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "Se desbloquea automáticamente tras conseguir todos los demás trofeos del juego base." },
+
+    // HISTORIA Y DIFICULTAD
+    { "id": "unch3_02", "chapter": "Historia", "name": "¡Completado! - Fácil", "desc": "Completa el juego en el modo Fácil.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas la campaña en una dificultad superior." },
+    { "id": "unch3_03", "chapter": "Historia", "name": "¡Completado! - Normal", "desc": "Completa el juego en el modo Normal.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas la campaña en una dificultad superior." },
+    { "id": "unch3_04", "chapter": "Historia", "name": "¡Completado! - Difícil", "desc": "Completa el juego en el modo Difícil.", "type": "silver", "missable": false, "online": false, "guide": "Completa la historia en Difícil. Al hacerlo desbloquearás la dificultad Aplastante." },
+    { "id": "unch3_05", "chapter": "Historia", "name": "¡Completado! - Aplastante", "desc": "Completa el juego en el modo Aplastante.", "type": "gold", "missable": false, "online": false, "guide": "La dificultad más alta del juego base. Aprovecha el nuevo sistema para devolver granadas, cúbrete constantemente y abusa de los tiros a la cabeza." },
+
+    // COLECCIONABLES
+    { "id": "unch3_06", "chapter": "Coleccionables", "name": "Primer tesoro", "desc": "Encuentra un tesoro.", "type": "bronze", "missable": false, "online": false, "guide": "Recoge tu primer tesoro brillante del suelo." },
+    { "id": "unch3_07", "chapter": "Coleccionables", "name": "Cazador de tesoros novato", "desc": "Encuentra 20 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 20 tesoros acumulados." },
+    { "id": "unch3_08", "chapter": "Coleccionables", "name": "Cazador de tesoros competente", "desc": "Encuentra 40 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 40 tesoros acumulados." },
+    { "id": "unch3_09", "chapter": "Coleccionables", "name": "Cazador de tesoros experto", "desc": "Encuentra 60 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 60 tesoros acumulados." },
+    { "id": "unch3_10", "chapter": "Coleccionables", "name": "Cazador de tesoros profesional", "desc": "Encuentra 80 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 80 tesoros acumulados." },
+    { "id": "unch3_11", "chapter": "Coleccionables", "name": "Maestro cazador de tesoros", "desc": "Encuentra los 100 tesoros.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra los 100 tesoros ocultos en el juego. Puedes usar la selección de capítulos para recoger los que te falten." },
+    { "id": "unch3_12", "chapter": "Coleccionables", "name": "Buscador de reliquias", "desc": "Encuentra la reliquia extraña.", "type": "bronze", "missable": false, "online": false, "guide": "Se encuentra en el Capítulo 4 (La gresca), dentro del silo cilíndrico antes de subir por la rejilla. Es el clásico huevo de Jak & Daxter." },
+
+    // COMBATE
+    { "id": "unch3_13", "chapter": "Combate", "name": "20 tiros a la cabeza", "desc": "Elimina a 20 enemigos con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo apuntando a la cabeza de tus oponentes." },
+    { "id": "unch3_14", "chapter": "Combate", "name": "100 tiros a la cabeza", "desc": "Elimina a 100 enemigos con tiros a la cabeza.", "type": "silver", "missable": false, "online": false, "guide": "Saldrá de forma natural a lo largo de tu aventura." },
+    { "id": "unch3_15", "chapter": "Combate", "name": "Tirador experto", "desc": "Elimina a 5 enemigos consecutivamente con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 5 bajas seguidas a la cabeza sin fallar disparos intermedios y sin matar al cuerpo." },
+    { "id": "unch3_16", "chapter": "Combate", "name": "Tirador temerario", "desc": "Elimina a 20 enemigos disparando desde la cadera (sin apuntar).", "type": "bronze", "missable": false, "online": false, "guide": "Dispara moviéndote a corta distancia usando solo el gatillo de disparo (R2/R1)." },
+    { "id": "unch3_17", "chapter": "Combate", "name": "Verdugo", "desc": "Elimina a 20 enemigos apuntando a ciegas desde una cobertura.", "type": "bronze", "missable": false, "online": false, "guide": "Pégate a un muro y abate enemigos disparando sin pulsar el botón de apuntar." },
+    { "id": "unch3_18", "chapter": "Combate", "name": "Verdugo con granadas", "desc": "Elimina a 10 enemigos con granadas apuntando a ciegas desde una cobertura.", "type": "bronze", "missable": false, "online": false, "guide": "Arroja granadas desde una cobertura pasiva sin asomarte en absoluto." },
+    { "id": "unch3_19", "chapter": "Combate", "name": "Por los pelos", "desc": "Elimina a 20 enemigos con disparos colgado de un saliente.", "type": "bronze", "missable": false, "online": false, "guide": "Quédate colgado de cualquier cornisa o cuerda y elimina enemigos usando tu arma corta." },
+    { "id": "unch3_20", "chapter": "Combate", "name": "Buscador de broncas", "desc": "Elimina a 20 enemigos con combates cuerpo a cuerpo.", "type": "bronze", "missable": false, "online": false, "guide": "Elimina enemigos usando ataques físicos directos." },
+    { "id": "unch3_21", "chapter": "Combate", "name": "Peleón de taberna", "desc": "Elimina a 50 enemigos con combates cuerpo a cuerpo.", "type": "bronze", "missable": false, "online": false, "guide": "Trofeo acumulativo combinando peleas normales y contragolpes." },
+    { "id": "unch3_22", "chapter": "Combate", "name": "Experto en contraataques", "desc": "Contraataca con éxito los ataques de 20 enemigos.", "type": "bronze", "missable": false, "online": false, "guide": "Cuando un enemigo te agarre o te vaya a golpear, pulsa Triángulo en el momento justo para repeler su ataque." },
+    { "id": "unch3_23", "chapter": "Combate", "name": "Luchador de primera", "desc": "Derrota a un Grandullón usando únicamente el combate cuerpo a cuerpo.", "type": "bronze", "missable": false, "online": false, "guide": "Cuando te enfrentes a un enemigo pesado (Brute), no le dispares; derrota esquivando y contragolpeando sus ataques a puñetazos." },
+    { "id": "unch3_24", "chapter": "Combate", "name": "Ninja", "desc": "Elimina a 50 enemigos con ataques sigilosos.", "type": "bronze", "missable": false, "online": false, "guide": "Acércate agachado por detrás de los enemigos y elimínalos con Cuadrado sin ser visto." },
+    { "id": "unch3_25", "chapter": "Combate", "name": "Maestro ninja", "desc": "Elimina a 5 enemigos consecutivamente usando el sigilo.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue 5 bajas silenciosas seguidas sin que den la alarma. El Capítulo 8 (La ciudadela) es ideal para esto." },
+    { "id": "unch3_26", "chapter": "Combate", "name": "Regreso al remitente", "desc": "Elimina a 10 enemigos devolviendo granadas.", "type": "bronze", "missable": false, "online": false, "guide": "Cuando te lancen una granada, espera a que la aguja del indicador llegue a la zona verde y pulsa Triángulo para devolverla." },
+    { "id": "unch3_27", "chapter": "Combate", "name": "¡Regalito!", "desc": "Elimina a 2 enemigos con una sola granada devuelta.", "type": "bronze", "missable": false, "online": false, "guide": "Devuelve una granada enemiga de forma que su explosión mate a dos oponentes que estén muy juntos." },
+    { "id": "unch3_28", "chapter": "Combate", "name": "¡Cuatro por el precio de uno!", "desc": "Elimina a 4 enemigos con una sola explosión.", "type": "bronze", "missable": false, "online": false, "guide": "Usa un RPG o un lanzagranadas contra un grupo compacto de enemigos, como los que bajan de los camiones en el desierto." },
+    { "id": "unch3_29", "chapter": "Combate", "name": "Tiburón terrestre", "desc": "Elimina a 20 enemigos mientras estás en el agua.", "type": "bronze", "missable": false, "online": false, "guide": "Dispara y mata a enemigos mientras flotas en el agua. Se hace fácilmente en los capítulos del cementerio de barcos." },
+    { "id": "unch3_30", "chapter": "Combate", "name": "Cazadisturbios", "desc": "Derrota a 5 enemigos con escudo antidisturbios pasando por encima de sus escudos.", "type": "bronze", "missable": false, "online": false, "guide": "Corre hacia un enemigo con escudo, pulsa Cuadrado para saltar sobre él y luego elimínalo por la espalda." },
+    { "id": "unch3_31", "chapter": "Combate", "name": "Superviviente", "desc": "Elimina a 75 enemigos consecutivamente sin morir.", "type": "silver", "missable": false, "online": false, "guide": "Puedes lograrlo de forma segura jugando capítulos intermedios de la campaña en dificultad Fácil." },
+
+    // ARMAS
+    { "id": "unch3_32", "chapter": "Armas", "name": "Estudio de armas", "desc": "Elimina al menos a un enemigo con cada uno de los tipos de armas.", "type": "bronze", "missable": false, "online": false, "guide": "Debes conseguir una baja con cada una de las armas disponibles en el juego base (armas de fuego, granadas y armas pesadas)." },
+    { "id": "unch3_33", "chapter": "Armas", "name": "30 muertes: Mag 5", "desc": "Elimina a 30 enemigos con la Mag 5.", "type": "bronze", "missable": false, "online": false, "guide": "Pistola pesada muy potente." },
+    { "id": "unch3_34", "chapter": "Armas", "name": "30 muertes: Arm Micro", "desc": "Elimina a 30 enemigos con la Arm Micro.", "type": "bronze", "missable": false, "online": false, "guide": "Subfusil ligero de una mano." },
+    { "id": "unch3_35", "chapter": "Armas", "name": "30 muertes: KAL 7", "desc": "Elimina a 30 enemigos con el KAL 7.", "type": "bronze", "missable": false, "online": false, "guide": "Carabina automática de fuego rápido." },
+    { "id": "unch3_36", "chapter": "Armas", "name": "30 muertes: M9", "desc": "Elimina a 30 enemigos con el M9.", "type": "bronze", "missable": false, "online": false, "guide": "Rifle de asalto estándar de gran precisión." },
+    { "id": "unch3_37", "chapter": "Armas", "name": "30 muertes: Francotirador Dragón", "desc": "Elimina a 30 enemigos con el Francotirador Dragón.", "type": "bronze", "missable": false, "online": false, "guide": "Rifle de precisión con mira telescópica." },
+    { "id": "unch3_38", "chapter": "Armas", "name": "30 muertes: PAK-80", "desc": "Elimina a 30 enemigos con la PAK-80.", "type": "bronze", "missable": false, "online": false, "guide": "La ametralladora pesada que llevan las tropas acorazadas." },
+    { "id": "unch3_39", "chapter": "Armas", "name": "30 muertes: Tau Tactical", "desc": "Elimina a 30 enemigos con la pistola Tau Tactical.", "type": "bronze", "missable": false, "online": false, "guide": "Pistola con mira integrada ideal para distancias largas." },
+    { "id": "unch3_40", "chapter": "Armas", "name": "Especialista en bombonas", "desc": "Elimina a 10 enemigos con explosiones de bombonas de propano.", "type": "bronze", "missable": false, "online": false, "guide": "Lanza bombonas de propano rojas (o dispara a las que estén en el escenario) para matar a 10 enemigos." },
+
+    // VARIOS / ONLINE
+    { "id": "unch3_41", "chapter": "Varios", "name": "Marco Solo", "desc": "Juega en la piscina del crucero.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 14 (Buscando problemas), lánzate dentro de la piscina climatizada del barco crucero y quédate nadando unos segundos." },
+    { "id": "unch3_42", "chapter": "Online", "name": "Buscador de emociones", "desc": "Completa una partida de juego competitivo multijugador.", "type": "bronze", "missable": false, "online": true, "guide": "*(Nota: Requerido solo en la lista original de PS3; se eliminó en la versión Remasterizada de PS4 debido al cierre de servidores).* " },
+    { "id": "unch3_43", "chapter": "Online", "name": "Compañero de fatigas", "desc": "Completa una partida de juego cooperativo multijugador.", "type": "bronze", "missable": false, "online": true, "guide": "*(Nota: Requerido solo en la lista original de PS3; se eliminó en la versión Remasterizada de PS4).* " }
+  ]
+},
+ {
+  "id": "uncharted4",
+  "slug": "uncharted-4-el-desenlace-del-ladron",
+  "title": "Uncharted 4: El desenlace del ladrón",
+  "platform": "PS4 / PS5 / PC",
+  "cover": "img/uncharted4.jpg",
+  "emoji": "🏴‍☠️",
+  "totalTrophies": 56,
+  "difficulty": "6/10",
+  "minHours": 30,
+  "hasMissable": false,
+  "tags": ["acción", "aventura", "lineal", "disparos"],
+  "trophies": [
+    // PLATINO
+    { "id": "unch4_01", "chapter": "Platino", "name": "¡Última vez!", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "Desbloquea todos los demás trofeos del juego base." },
+
+    // HISTORIA Y DIFICULTAD
+    { "id": "unch4_02", "chapter": "Historia", "name": "¡Completado! - Explorador", "desc": "Completa el juego en el modo Explorador.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas la campaña en una dificultad superior." },
+    { "id": "unch4_03", "chapter": "Historia", "name": "¡Completado! - Ligero", "desc": "Completa el juego en el modo Ligero.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas la campaña en una dificultad superior." },
+    { "id": "unch4_04", "chapter": "Historia", "name": "¡Completado! - Moderado", "desc": "Completa el juego en el modo Moderado.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula si completas la campaña en una dificultad superior." },
+    { "id": "unch4_05", "chapter": "Historia", "name": "¡Completado! - Difícil", "desc": "Completa el juego en el modo Difícil.", "type": "silver", "missable": false, "online": false, "guide": "Se acumula si completas la campaña en Aplastante." },
+    { "id": "unch4_06", "chapter": "Historia", "name": "¡Completado! - Aplastante", "desc": "Completa el juego en el modo Aplastante.", "type": "gold", "missable": false, "online": false, "guide": "La dificultad más exigente. Se recomienda hacerla en una segunda partida utilizando las bonificaciones de munición infinita y apuntado automático si se te complica." },
+    { "id": "unch4_07", "chapter": "Historia", "name": "¡Completado! - Carrera continua", "desc": "Completa el juego en 6 horas o menos.", "type": "gold", "missable": false, "online": false, "guide": "Speedrun del juego. Salta todas las cinemáticas, ignora los combates innecesarios y juega en dificultad Explorador." },
+
+    // COLECCIONABLES
+    { "id": "unch4_08", "chapter": "Coleccionables", "name": "Primer tesoro", "desc": "Encuentra un tesoro.", "type": "bronze", "missable": false, "online": false, "guide": "Recoge tu primer tesoro brillante del escenario." },
+    { "id": "unch4_09", "chapter": "Coleccionables", "name": "Cazador de tesoros cazado", "desc": "Encuentra 50 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue la mitad de los tesoros del juego." },
+    { "id": "unch4_10", "chapter": "Coleccionables", "name": "Maestro cazador de tesoros", "desc": "Encuentra todos los tesoros.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra los 109 tesoros ocultos de la campaña utilizando la selección de capítulos." },
+    { "id": "unch4_11", "chapter": "Coleccionables", "name": "Buscador de reliquias", "desc": "Encuentra las reliquias extrañas.", "type": "bronze", "missable": false, "online": false, "guide": "Debes encontrar los 3 guiños de Naughty Dog: la reliquia extraña (Jak & Daxter en Cap. 9), el extraño colgante (The Last of Us en Cap. 12) y la extraña fruta (Crash Bandicoot en Cap. 21)." },
+    { "id": "unch4_12", "chapter": "Coleccionables", "name": "Anotar el pasado", "desc": "Encuentra una nota del diario.", "type": "bronze", "missable": false, "online": false, "guide": "Recoge tu primera nota de papel coleccionable." },
+    { "id": "unch4_13", "chapter": "Coleccionables", "name": "Historial perdido", "desc": "Encuentra todas las notas del diario.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue las 23 notas del diario repartidas por la historia." },
+    { "id": "unch4_14", "chapter": "Coleccionables", "name": "Tomar nota", "desc": "Encuentra una entrada del diario.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue que Drake dibuje su primera anotación en su cuaderno de notas." },
+    { "id": "unch4_15", "chapter": "Coleccionables", "name": "El arte de la conversación", "desc": "Escucha todas las conversaciones opcionales.", "type": "silver", "missable": false, "online": false, "guide": "Activa las 36 conversaciones opcionales con tus compañeros pulsando Triángulo cuando aparezca el icono de bocadillo." },
+
+    // COMBATE
+    { "id": "unch4_16", "chapter": "Combate", "name": "Primer tiro", "desc": "Elimina a 20 enemigos con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo apuntando a la cabeza." },
+    { "id": "unch4_17", "chapter": "Combate", "name": "Cazacabezas", "desc": "Elimina a 50 enemigos con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo a lo largo de tu aventura." },
+    { "id": "unch4_18", "chapter": "Combate", "name": "¿Disparas al azar?", "desc": "Elimina a 20 enemigos disparando desde la cadera.", "type": "bronze", "missable": false, "online": false, "guide": "Elimina enemigos de cerca usando solo el botón R2 sin apuntar con L2." },
+    { "id": "unch4_19", "chapter": "Combate", "name": "La soga al cuello", "desc": "Elimina a 20 enemigos con tiros a la cabeza colgado de una cuerda.", "type": "bronze", "missable": false, "online": false, "guide": "Usa el gancho, quédate suspendido y elimina a los rivales apuntando a la cabeza." },
+    { "id": "unch4_20", "chapter": "Combate", "name": "Sigilo primero, preguntas después", "desc": "Elimina a 5 enemigos con ataques sigilosos.", "type": "bronze", "missable": false, "online": false, "guide": "Bajas silenciosas escondido en la hierba alta." },
+    { "id": "unch4_21", "chapter": "Combate", "name": "Cazador furtivo", "desc": "Elimina a 30 enemigos con ataques sigilosos.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo limpiando zonas sin levantar sospechas." },
+    { "id": "unch4_22", "chapter": "Combate", "name": "Te sales", "desc": "Elimina a 50 enemigos disparando a ciegas o desde la cadera.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo disparando en carrera o tras una cobertura sin asomarte." },
+    { "id": "unch4_23", "chapter": "Combate", "name": "Salto de la rana", "desc": "Elimina a 10 enemigos consecutivamente alternando disparos y combate cuerpo a cuerpo.", "type": "bronze", "missable": false, "online": false, "guide": "Mata a un enemigo a tiros, al siguiente a golpes, al siguiente a tiros, y así hasta encadenar 10." },
+    { "id": "unch4_24", "chapter": "Combate", "name": "¡Imparable!", "desc": "Elimina a 100 enemigos seguidos sin morir.", "type": "silver", "missable": false, "online": false, "guide": "Se puede hacer fácilmente mediante la selección de encuentros en dificultad Explorador." },
+    { "id": "unch4_25", "chapter": "Combate", "name": "Especialista en armas", "desc": "Elimina a enemigos con todas las armas del juego.", "type": "bronze", "missable": false, "online": false, "guide": "Debes lograr una baja con las 30 armas del juego (incluyendo la pistola de juguete, la torreta y los barriles de pólvora)." },
+    { "id": "unch4_26", "chapter": "Combate", "name": "Racha de bajas", "desc": "Tira a 20 enemigos desde salientes.", "type": "bronze", "missable": false, "online": false, "guide": "Pégate a un borde inferior, espera a que un enemigo se acerque y pulsa Cuadrado para tirarlo al vacío." },
+    { "id": "unch4_27", "chapter": "Combate", "name": "Manitas", "desc": "Derrota a 10 enemigos con explosivos colgado de una cuerda.", "type": "bronze", "missable": false, "online": false, "guide": "Lanza dinamita o dispara a barriles rojos mientras cuelgas del gancho." },
+    { "id": "unch4_28", "chapter": "Combate", "name": "Doble ración", "desc": "Derrota a 10 enemigos junto a tu compañero.", "type": "bronze", "missable": false, "online": false, "guide": "Realiza ataques cuerpo a cuerpo combinados automáticos cuando un aliado esté golpeando al mismo rival." },
+    { "id": "unch4_29", "chapter": "Combate", "name": "Infranqueable", "desc": "Derrota a 5 enemigos con escudo pasando por encima.", "type": "bronze", "missable": false, "online": false, "guide": "Rueda hacia los enemigos con escudo, pulsa Cuadrado para subirte a ellos y rómpeles el cuello." },
+
+    // HAZAÑAS Y VARIOS
+    { "id": "unch4_30", "chapter": "Hazañas", "name": "¡Récord!", "desc": "Supera la puntuación más alta del videojuego retro.", "type": "bronze", "missable": false, "online": false, "guide": "Debes superar los 3500 puntos en el minijuego de Crash Bandicoot. Se hace más fácil en el Epílogo al conseguir vidas extra." },
+    { "id": "unch4_31", "chapter": "Hazañas", "name": "No alimentar a los animales", "desc": "Juega con el lémur en el mercado y deja que te robe la manzana.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 11, compra una manzana, acércate al lémur del hombre del hombro, camina un poco y deja que te la quite." },
+    { "id": "unch4_32", "chapter": "Hazañas", "name": "¡Te pillé!", "desc": "Sube a lo más alto de la torre del reloj en Madagascar.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 11, trepa por el exterior de la torre del reloj hasta la aguja más alta por encima de la campana." },
+    { "id": "unch4_33", "chapter": "Hazañas", "name": "Prueba de aptitud", "desc": "Resuelve la primera prueba en Escocia en 10 movimientos o menos.", "type": "bronze", "missable": false, "online": false, "guide": "En el puzle de las tres cruces y la cubeta de agua del Capítulo 9, haz girar las ruedas siguiendo el orden correcto de mínimos movimientos." },
+    { "id": "unch4_34", "chapter": "Hazañas", "name": "Disonancia ludonarrativa", "desc": "Elimina a 1000 enemigos.", "type": "bronze", "missable": false, "online": false, "guide": "Trofeo acumulativo de bajas totales. Saltará de forma natural buscando el resto de trofeos." },
+    { "id": "unch4_35", "chapter": "Hazañas", "name": "No dejar piedra sobre piedra", "desc": "Derriba todos los montículos de piedras en Madagascar.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 10, destruye los 16 hitos de piedras (cairns) atropellándolos con el todoterreno." },
+    { "id": "unch4_36", "chapter": "Hazañas", "name": "Aún le dura", "desc": "Acierta a todos los objetivos con la pistola de juguete en el desván.", "type": "bronze", "missable": false, "online": false, "guide": "Al inicio del Capítulo 4, recoge la pistola de plástico del suelo y dispara a las 4 dianas circulares colgadas del techo." },
+    { "id": "unch4_37", "chapter": "Hazañas", "name": "Fantasma del cementerio", "desc": "Cruza el cementerio de Escocia sin matar a nadie ni ser visto.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 8, atraviesa toda la zona de patrulla enemiga usando los acantilados y la hierba sin iniciar alertas ni noquear a nadie." },
+    { "id": "unch4_38", "chapter": "Hazañas", "name": "Compañero de fatigas", "desc": "Escapa en el jeep con Elena sin matar a nadie.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 17, conduce el vehículo evitando atropellar o disparar a ningún soldado hasta llegar al elevador." },
+    { "id": "unch4_39", "chapter": "Hazañas", "name": "Baile de graduación", "desc": "Derrota a enemigos con sigilo, cuerpo a cuerpo, tiro a la cabeza y explosivos en menos de 15 segundos.", "type": "bronze", "missable": false, "online": false, "guide": "Se realiza muy fácil en el encuentro del mercado del Capítulo 11 combinando las acciones rápido." },
+    { "id": "unch4_40", "chapter": "Hazañas", "name": "Se acabó la función", "desc": "Quédate completamente quieto justo antes de la persecución en el mercado.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 11, al abrir las puertas del mercado donde se bugeó la demo del E3, no toques el mando durante 30 segundos." },
+    { "id": "unch4_41", "chapter": "Hazañas", "name": "Espadachín", "desc": "Bloquea todos los ataques de Rafe en el duelo final sin recibir daño.", "type": "silver", "missable": false, "online": false, "guide": "En el Capítulo 22, completa la primera fase del duelo de espadas bloqueando a izquierda y derecha perfectamente en dificultad Fácil." },
+
+    // MULTIJUGADOR *(Nota: Estos trofeos solo aplican a la versión original de PS4; se eliminaron en la Colección Legado de los Ladrones de PS5/PC)*
+    { "id": "unch4_42", "chapter": "Multijugador", "name": "Entrar en el juego", "desc": "Completa la introducción al multijugador de Uncharted.", "type": "bronze", "missable": false, "online": true, "guide": "Completa el tutorial guiado del modo online." },
+    { "id": "unch4_43", "chapter": "Multijugador", "name": "Preparado para la aventura", "desc": "Completa 5 partidas en el modo multijugador.", "type": "bronze", "missable": false, "online": true, "guide": "Termina 5 enfrentamientos públicos de cualquier estilo multijugador." },
+    { "id": "unch4_44", "chapter": "Multijugador", "name": "Prueba de fuego", "desc": "Completa todas las pruebas en la dificultad Moderado del multijugador.", "type": "bronze", "missable": false, "online": true, "guide": "Supera los retos individuales centrados en aprender a usar los místicos y compañeros." },
+    { "id": "unch4_45", "chapter": "Multijugador", "name": "Amigos para siempre", "desc": "Genera a 10 compañeros en el modo multijugador.", "type": "bronze", "missable": false, "online": true, "guide": "Invoca a 10 ayudantes de la tienda interna durante tus partidas online." },
+    { "id": "unch4_46", "chapter": "Multijugador", "name": "¡Médico!", "desc": "Revive a 10 aliados en el modo multijugador.", "type": "bronze", "missable": false, "online": true, "guide": "Sana a 10 compañeros caídos en combate antes de que mueran del todo." }
+  ]
+},
+ {
+  "id": "uncharted_ll",
+  "slug": "uncharted-el-legado-perdido",
+  "title": "Uncharted: El Legado Perdido",
+  "platform": "PS4 / PS5 / PC",
+  "cover": "img/uncharted_ll.jpg",
+  "emoji": "💎",
+  "totalTrophies": 50,
+  "difficulty": "5/10",
+  "minHours": 15,
+  "hasMissable": false,
+  "tags": ["acción", "aventura", "mundo-abierto-parcial", "disparos"],
+  "trophies": [
+    // PLATINO
+    { "id": "uncll_01", "chapter": "Platino", "name": "No dejes piedra sin remover", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "Se desbloquea tras conseguir todos los demás trofeos del juego." },
+
+    // HISTORIA Y DIFICULTAD
+    { "id": "uncll_02", "chapter": "Historia", "name": "Legado encontrado", "desc": "Completa el juego.", "type": "gold", "missable": false, "online": false, "guide": "Automático por completar la campaña en cualquier dificultad." },
+    { "id": "uncll_03", "chapter": "Historia", "name": "¡Completado! - Explorador", "desc": "Completa el juego en el modo Explorador.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula al completarlo en una dificultad superior." },
+    { "id": "uncll_04", "chapter": "Historia", "name": "¡Completado! - Ligero", "desc": "Completa el juego en el modo Ligero.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula al completarlo en una dificultad superior." },
+    { "id": "uncll_05", "chapter": "Historia", "name": "¡Completado! - Moderado", "desc": "Completa el juego en el modo Moderado.", "type": "bronze", "missable": false, "online": false, "guide": "Se acumula al completarlo en una dificultad superior." },
+    { "id": "uncll_06", "chapter": "Historia", "name": "¡Completado! - Difícil", "desc": "Completa el juego en el modo Difícil.", "type": "silver", "missable": false, "online": false, "guide": "Se acumula al completarlo en modo Aplastante." },
+    { "id": "uncll_07", "chapter": "Historia", "name": "¡Completado! - Aplastante", "desc": "Completa el juego en el modo Aplastante.", "type": "gold", "missable": false, "online": false, "guide": "Dificultad máxima. Puedes activar las bonificaciones de munición infinita y autoguardado desde el menú de extras tras pasarte el juego una vez para facilitarlo." },
+    { "id": "uncll_08", "chapter": "Historia", "name": "El camino del guerrero", "desc": "En el capítulo 5, llega a la llanura de Halebidu sin usar armas de fuego ni explosivos.", "type": "gold", "missable": true, "online": false, "guide": "Desde el inicio del juego hasta el Capítulo 5, debes jugar estrictamente usando sigilo y combate cuerpo a cuerpo. Nadine sí puede disparar." },
+
+    // COLECCIONABLES
+    { "id": "uncll_09", "chapter": "Coleccionables", "name": "Buscador de tesoros casual", "desc": "Encuentra 5 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue tus primeros 5 tesoros brillantes." },
+    { "id": "uncll_10", "chapter": "Coleccionables", "name": "Buscador de tesoros hardcore", "desc": "Encuentra 35 tesoros.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue la mitad de los tesoros del juego." },
+    { "id": "uncll_11", "chapter": "Coleccionables", "name": "Coleccionista de antigüedades", "desc": "Encuentra todos los tesoros.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra los 68 tesoros ocultos en la campaña." },
+    { "id": "uncll_12", "chapter": "Coleccionables", "name": "Fichado", "desc": "Encuentra un recuerdo de Hoysala.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue tu primer medallón en el mapa abierto del Capítulo 4." },
+    { "id": "uncll_13", "chapter": "Coleccionables", "name": "¡Sí, reina!", "desc": "Encuentra todos los recuerdos de Hoysala y consigue el Rubí de la reina.", "type": "silver", "missable": false, "online": false, "guide": "Reúne los 11 recuerdos en el Capítulo 4 y devuélvelos al santuario. Te otorgarán el Rubí de la Reina, un objeto que pita cuando estás cerca de cualquier tesoro del juego." },
+    { "id": "uncll_14", "chapter": "Coleccionables", "name": "Si no hay foto, no pasó", "desc": "Haz todas las fotos.", "type": "silver", "missable": false, "online": false, "guide": "Interactúa con los 28 puntos fotográficos opcionales usando el móvil de Chloe." },
+    { "id": "uncll_15", "chapter": "Coleccionables", "name": "Llegando a conocerte", "desc": "Escucha todas las conversaciones opcionales.", "type": "silver", "missable": false, "online": false, "guide": "Activa las 17 conversaciones opcionales con Nadine pulsando Triángulo cuando aparezca el bocadillo." },
+    { "id": "uncll_16", "chapter": "Coleccionables", "name": "Asalto a las cajas", "desc": "Abre todas las cajas de suministros.", "type": "bronze", "missable": false, "online": false, "guide": "Fuerza las cerraduras de las 21 cajas fuertes grandes repartidas por los escenarios mediante el minijuego de ganzúas." },
+
+    // COMBATE
+    { "id": "uncll_17", "chapter": "Combate", "name": "10 arriba, 10 abajo", "desc": "Elimina a 10 enemigos seguidos con tiros a la cabeza.", "type": "bronze", "missable": false, "online": false, "guide": "Encadena 10 bajas a la cabeza seguidas sin fallar ni matar al cuerpo." },
+    { "id": "uncll_18", "chapter": "Combate", "name": "Frazer. Chloe Frazer.", "desc": "Elimina a 5 enemigos seguidos con la pistola con silenciador sin ser detectada.", "type": "bronze", "missable": false, "online": false, "guide": "Usa la pistola silenciosa desde la hierba alta para abatir a 5 rivales sin levantar la alerta." },
+    { "id": "uncll_19", "chapter": "Combate", "name": "Es como te mueves", "desc": "Elimina enemigos usando sigilo, cuerpo a cuerpo, tiros a la cabeza y vehículos en menos de 20 segundos.", "type": "bronze", "missable": false, "online": false, "guide": "Haz un combo rápido: elimina a uno por la espalda, a otro a puñetazos, dale un tiro a la cabeza a un tercero y atropella a un cuarto." },
+    { "id": "uncll_20", "chapter": "Combate", "name": "Justo ante sus narices", "desc": "Abre una caja de suministros con enemigos cerca.", "type": "bronze", "missable": false, "online": false, "guide": "Fuerza una caja fuerte mientras los enemigos patrullan la zona sin que te descubran del todo." },
+    { "id": "uncll_21", "chapter": "Combate", "name": "¿Te enseño los dientes?", "desc": "Elimina a 30 enemigos con ataques cuerpo a cuerpo tras debilitarlos con disparos.", "type": "bronze", "missable": false, "online": false, "guide": "Dispara desde la cadera a un enemigo cercano y remátalo con un combo a puñetazos de inmediato." },
+    { "id": "uncll_22", "chapter": "Combate", "name": "Conductor de segunda", "desc": "Secuestra 6 vehículos enemigos saltando sobre ellos.", "type": "bronze", "missable": false, "online": false, "guide": "Conduce cerca de un camión enemigo, pulsa el botón para saltar hacia él y tira al conductor." },
+    { "id": "uncll_23", "chapter": "Combate", "name": "Probar el menú", "desc": "Consigue una baja con cada arma de fuego disponible.", "type": "bronze", "missable": false, "online": false, "guide": "Logra una eliminación con las 24 armas de fuego diferentes del juego (puedes usar el menú de extras)." },
+    { "id": "uncll_24", "chapter": "Combate", "name": "Traigan los pesos pesados", "desc": "Elimina a 30 enemigos con armas pesadas.", "type": "bronze", "missable": false, "online": false, "guide": "Consigue bajas usando la ametralladora GAU-19, lanzacohetes o escopetas pesadas." },
+    { "id": "uncll_25", "chapter": "Combate", "name": "Exceso de fuerza", "desc": "Coloca múltiples cargas de C4 en un vehículo y destrúyelo de una sola explosión.", "type": "bronze", "missable": false, "online": false, "guide": "Lanza 4 o más cargas de C4 sobre un coche de patrulla y detónalas a la vez." },
+    { "id": "uncll_26", "chapter": "Combate", "name": "¿Estabas mirando?", "desc": "Derriba a un enemigo por un saliente de un golpe.", "type": "bronze", "missable": false, "online": false, "guide": "Golpea a un enemigo situado al borde de un abismo para tirarlo de forma directa." },
+    { "id": "uncll_27", "chapter": "Combate", "name": "Gatillo fácil", "desc": "Dispara a ciegas 20 veces desde cobertura.", "type": "bronze", "missable": false, "online": false, "guide": "Pégate a una pared y dispara con R2 sin apuntar un total de 20 veces." },
+    { "id": "uncll_28", "chapter": "Combate", "name": "Compromiso blindado", "desc": "Elimina a un enemigo con armadura pesada solo con sigilo.", "type": "bronze", "missable": false, "online": false, "guide": "Quítale el casco por la espalda sigilosamente y, tras romper la alerta corta, vuelve a rematarlo por la espalda." },
+    { "id": "uncll_29", "chapter": "Combate", "name": "El guerrero de las sombras", "desc": "Completa el capítulo 5 sin iniciar ningún combate ni ser detectado.", "type": "silver", "missable": true, "online": false, "guide": "Escapa del fuerte de Asav en el Capítulo 5 pasando de largo de todos los soldados usando la cobertura sin que te vean." },
+    { "id": "uncll_30", "chapter": "Combate", "name": "A la carrera", "desc": "Derriba 10 vehículos enemigos embistiéndolos.", "type": "bronze", "missable": false, "online": false, "guide": "Choca con tu 4x4 contra las motos y coches enemigos hasta destrozarlos." },
+    { "id": "uncll_31", "chapter": "Combate", "name": "Disparar y correr", "desc": "Elimina a 20 enemigos disparando desde la cadera.", "type": "bronze", "missable": false, "online": false, "guide": "Mata a 20 rivales corriendo y disparando sin usar el botón L2." },
+    { "id": "uncll_32", "chapter": "Combate", "name": "Pelea de bar", "desc": "Consigue 20 bajas cuerpo a cuerpo combinadas con Nadine.", "type": "bronze", "missable": false, "online": false, "guide": "Ataca físicamente a los enemigos que Nadine esté golpeando para activar las animaciones conjuntas." },
+    { "id": "uncll_33", "chapter": "Combate", "name": "Puntería perfecta", "desc": "Termina el juego con un 70% o más de precisión.", "type": "bronze", "missable": false, "online": false, "guide": "Puedes activar el apuntado automático en los ajustes para asegurar los tiros." },
+    { "id": "uncll_34", "chapter": "Combate", "name": "Cazador de helicópteros", "desc": "Destruye el helicóptero de Asav sin recibir daño de sus misiles.", "type": "bronze", "missable": false, "online": false, "guide": "En el combate del Capítulo 8, usa el lanzacohetes oculto en las cajas y cúbrete bien bajo los techos cuando dispare ráfagas." },
+
+    // HAZAÑAS Y VARIOS
+    { "id": "uncll_35", "chapter": "Hazañas", "name": "Tu premio", "desc": "Disfruta de la vista desde lo alto del Imperio Hoysala.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 4, trepa a la parte más alta de la torre central redonda, quédate quieta unos 30 segundos y Chloe se pondrá a hacer posturas de yoga." },
+    { "id": "uncll_36", "chapter": "Hazañas", "name": "Mejor conductora del sector", "desc": "Conduce desde la cascada de Ganesa hasta el fuerte del arco y regresa en menos de 3 minutos.", "type": "bronze", "missable": false, "online": false, "guide": "Haz una contrarreloj perfecta con el todoterreno por los Ghats occidentales en el Capítulo 4 sin bajarte del coche." },
+    { "id": "uncll_37", "chapter": "Hazañas", "name": "Desafío impecable", "desc": "Supera todas las pruebas del fuerte del hacha sin reiniciar.", "type": "bronze", "missable": false, "online": false, "guide": "En el Capítulo 4, pisa las baldosas correctas del puzle del hacha del tirón sin caerte ni fallar." },
+    { "id": "uncll_38", "chapter": "Hazañas", "name": "Silencioso como un ratón", "desc": "Entra en el fuerte del tridente y consigue el artefacto sin que te vean.", "type": "bronze", "missable": false, "online": false, "guide": "Activa las palancas del fuerte del tridente en el Capítulo 4 moviéndote entre las ruinas sin alertar a los mercenarios." },
+    { "id": "uncll_39", "chapter": "Hazañas", "name": "Tarzana", "desc": "Balancéate en 5 cuerdas seguidas sin tocar el suelo.", "type": "bronze", "missable": false, "online": false, "guide": "Se realiza fácilmente en la zona pantanosa del Capítulo 4 usando los enganches del gancho seguidos." },
+    { "id": "uncll_40", "chapter": "Hazañas", "name": "Carrera acrobática", "desc": "Pasa un total de 30 segundos en el aire con el coche.", "type": "bronze", "missable": false, "online": false, "guide": "Trofeo acumulativo saltando por las rampas de tierra de los Ghats occidentales." },
+    { "id": "uncll_41", "chapter": "Hazañas", "name": "Teatro de sombras", "desc": "Resuelve el acertijo de sombras en 10 movimientos o menos.", "type": "bronze", "missable": false, "online": false, "guide": "En el puzle de las estatuas del Capítulo 5, mueve las palancas de forma óptima para cuadrar las siluetas en la pared rápido." },
+    { "id": "uncll_42", "chapter": "Hazañas", "name": "Marco Po-No", "desc": "Juega en el agua en la presa de Halebidu.", "type": "bronze", "missable": false, "online": false, "guide": "Al principio del Capítulo 5, lánzate a la piscina de agua que hay junto a la gran presa antes de avanzar." },
+    { "id": "uncll_43", "chapter": "Hazañas", "name": "Artificiera", "desc": "Desactiva 5 minas terrestres consecutivas sin fallar.", "type": "bronze", "missable": false, "online": false, "guide": "Acércate agachada a las minas que barren los escenarios y pulsa el botón en el momento justo del dial." },
+    { "id": "uncll_44", "chapter": "Hazañas", "name": "Colega de viaje", "desc": "Haz que Nadine elimine a 10 enemigos por su cuenta.", "type": "bronze", "missable": false, "online": false, "guide": "Quédate oculta en zonas de combate y deja que Nadine noquee o dispare a los soldados." },
+    { "id": "uncll_45", "chapter": "Hazañas", "name": "Derecho de piso", "desc": "Quédate quieta en el columpio del Capítulo 4.", "type": "bronze", "missable": false, "online": false, "guide": "Encuentra el columpio escondido colgado de un árbol en los Ghats y balancéate un rato." },
+    { "id": "uncll_46", "chapter": "Hazañas", "name": "¡Sorpresa!", "desc": "Elimina a un enemigo saltando desde una cuerda con un ataque aéreo.", "type": "bronze", "missable": false, "online": false, "guide": "Balancéate sobre un enemigo, déjate caer y presiona Cuadrado para noquearlo desde el cielo." },
+    { "id": "uncll_47", "chapter": "Hazañas", "name": "Rey de la carretera", "desc": "Atropella a 15 enemigos con el coche.", "type": "bronze", "missable": false, "online": false, "guide": "Acumulativo arrollando soldados en las llanuras del mapa abierto." },
+    { "id": "uncll_48", "chapter": "Hazañas", "name": "Señor de las minas", "desc": "Haz que 5 enemigos exploten con sus propias minas.", "type": "bronze", "missable": false, "online": false, "guide": "Dispara a las minas del suelo cuando un enemigo camine exactamente encima de ellas." },
+    { "id": "uncll_49", "chapter": "Hazañas", "name": "Paso a paso", "desc": "Completa todos los puzles de discos del juego.", "type": "bronze", "missable": false, "online": false, "guide": "Resuelve todos los rompecabezas de alinear círculos concéntricos de piedra." },
+    { "id": "uncll_50", "chapter": "Hazañas", "name": "Pelea de trenes", "desc": "Elimina a 20 enemigos en el tren final cuerpo a cuerpo.", "type": "bronze", "missable": false, "online": false, "guide": "En las secciones del Capítulo 9, pelea limpiamente a puñetazos contra los soldados sobre los vagones." }
   ]
 }
 
