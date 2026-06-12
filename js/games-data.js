@@ -1381,6 +1381,68 @@ const GAMES = [
     { "id": "uncll_49", "chapter": "Hazañas", "name": "Paso a paso", "desc": "Completa todos los puzles de discos del juego.", "type": "bronze", "missable": false, "online": false, "guide": "Resuelve todos los rompecabezas de alinear círculos concéntricos de piedra." },
     { "id": "uncll_50", "chapter": "Hazañas", "name": "Pelea de trenes", "desc": "Elimina a 20 enemigos en el tren final cuerpo a cuerpo.", "type": "bronze", "missable": false, "online": false, "guide": "En las secciones del Capítulo 9, pelea limpiamente a puñetazos contra los soldados sobre los vagones." }
   ]
+},
+ {
+  "id": "nine_sols",
+  "slug": "nine-sols",
+  "title": "Nine Sols",
+  "platform": "PS4 / PS5",
+  "cover": "img/nine_sols.jpg",
+  "emoji": "⚔️",
+  "totalTrophies": 36,
+  "difficulty": "7/10",
+  "minHours": 25,
+  "hasMissable": true,
+  "tags": ["acción", "metroidvania", "plataformas", "soulslike"],
+  "trophies": [
+    // PLATINO
+    { "id": "nsols_01", "chapter": "Platino", "name": "El camino del Tao", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "Se desbloquea tras conseguir los 35 trofeos restantes." },
+
+    // JEFES PRINCIPALES
+    { "id": "nsols_02", "chapter": "Jefes", "name": "Mi venganza comienza aquí", "desc": "Derrota a Baichang.", "type": "silver", "missable": false, "online": false, "guide": "Automático al vencer al primer jefe principal de la historia." },
+    { "id": "nsols_03", "chapter": "Jefes", "name": "Ya voy, viejo amigo", "desc": "Derrota a Yingzhao.", "type": "silver", "missable": false, "online": false, "guide": "Automático al vencer al segundo jefe principal." },
+    { "id": "nsols_04", "chapter": "Jefes", "name": "El que siembra, recoge", "desc": "Derrota a Goumang.", "type": "silver", "missable": false, "online": false, "guide": "Automático al vencer al tercer jefe principal." },
+    { "id": "nsols_05", "chapter": "Jefes", "name": "Respeta a tus mayores", "desc": "Derrota a Yanlao.", "type": "silver", "missable": false, "online": false, "guide": "Automático al vencer al cuarto jefe principal." },
+    { "id": "nsols_06", "chapter": "Jefes", "name": "Fuga de la prisión", "desc": "Escapa de la prisión con éxito.", "type": "silver", "missable": false, "online": false, "guide": "Automático al completar la sección de la cárcel." },
+    { "id": "nsols_07", "chapter": "Jefes", "name": "Sin dolor no hay gloria", "desc": "Derrota a Jiequan.", "type": "silver", "missable": false, "online": false, "guide": "Automático al vencer al quinto jefe principal." },
+    { "id": "nsols_08", "chapter": "Jefes", "name": "Despierta de mi pecado", "desc": "Derrota a Lady Ethereal.", "type": "silver", "missable": false, "online": false, "guide": "Automático al vencer al sexto jefe principal." },
+    { "id": "nsols_09", "chapter": "Jefes", "name": "Ven, dulce muerte", "desc": "Derrota a Ji.", "type": "silver", "missable": false, "online": false, "guide": "Automático al vencer al séptimo jefe principal." },
+    { "id": "nsols_10", "chapter": "Jefes", "name": "Nos tenemos el uno al otro", "desc": "Derrota a Fuxi y Nuwa.", "type": "gold", "missable": false, "online": false, "guide": "Automático al vencer el penúltimo combate de jefe de la historia principal." },
+    { "id": "nsols_11", "chapter": "Jefes", "name": "Aprendí del mejor", "desc": "Derrota a Eigong.", "type": "gold", "missable": false, "online": false, "guide": "Automático al vencer al jefe final. Es el combate más difícil del juego; practica la mecánica de parry y ten paciencia." },
+
+    // FINAL Y HISTORIA
+    { "id": "nsols_12", "chapter": "Historia", "name": "Estrella fugaz", "desc": "Sé testigo del fin de Nueva Kunlun.", "type": "silver", "missable": false, "online": false, "guide": "Automático al ver el final normal del juego." },
+    { "id": "nsols_13", "chapter": "Historia", "name": "Hogar, dulce hogar", "desc": "Regresa al mundo natal de los Solarianos.", "type": "gold", "missable": false, "online": false, "guide": "Final verdadero. Requiere haber completado todas las misiones secundarias para obtener la Flecha Rizomática y desbloquear el desenlace alternativo." },
+    { "id": "nsols_14", "chapter": "Historia", "name": "Luchar contra la adversidad", "desc": "Termina Nine Sols en Modo Estándar.", "type": "silver", "missable": false, "online": false, "guide": "Comienza la partida en Modo Estándar desde el principio. Si lo juegas en dificultad inferior, NO se desbloquea." },
+
+    // MISIONES SECUNDARIAS
+    { "id": "nsols_15", "chapter": "Secundarias", "name": "Al rescate", "desc": "Rescata al pueblo de la Aldea Flor del Melocotonero.", "type": "bronze", "missable": false, "online": false, "guide": "Completa la cadena de misiones de los aldeanos secuestrados." },
+    { "id": "nsols_16", "chapter": "Secundarias", "name": "Pasar el testigo", "desc": "Ayuda a Shennong a convertirse en líder de la Aldea Flor del Melocotonero.", "type": "bronze", "missable": false, "online": false, "guide": "Completa toda la historia de Shennong y sus misiones de aldea." },
+    { "id": "nsols_17", "chapter": "Secundarias", "name": "Descanso para el malvado", "desc": "Ayuda a Chiyou a traer la paz a Xingtian.", "type": "bronze", "missable": false, "online": false, "guide": "Completa la cadena de misiones de Chiyou. Solo se puede terminar después del punto de no retorno." },
+    { "id": "nsols_18", "chapter": "Secundarias", "name": "Te encontré", "desc": "Ayuda a Shanhai 9000 a encontrar a Chien.", "type": "bronze", "missable": false, "online": false, "guide": "Sigue la cadena de misiones del robot Shanhai 9000. Solo se puede completar tras el punto de no retorno." },
+    { "id": "nsols_19", "chapter": "Secundarias", "name": "Evolución", "desc": "Descubre un secreto tremendo.", "type": "bronze", "missable": false, "online": false, "guide": "Explora a fondo para dar con el laboratorio secreto oculto en el mapa." },
+    { "id": "nsols_20", "chapter": "Secundarias", "name": "Semilla mágica", "desc": "Ayuda a Shuanshuan a desbloquear el verdadero potencial de la agricultura.", "type": "bronze", "missable": false, "online": false, "guide": "Habla con Shuanshuan regularmente y entrégale los objetos que te pida a lo largo de la aventura." },
+    { "id": "nsols_21", "chapter": "Secundarias", "name": "Reciclado", "desc": "Usa la máquina de la fortuna construida por Shuanshuan.", "type": "bronze", "missable": true, "online": false, "guide": "⚠️ MUY MISSABLE: Compra SIEMPRE los chips de mapa a los robots Shanhai 9000 sin arrancárselos por la fuerza. Además, entrégale a Shuanshuan el Kit Multiusos, el Dispositivo de Realidad Virtual y el Periódico de la Academia Tiandao. Habla con él repetidamente hasta que construya la máquina." },
+    { "id": "nsols_22", "chapter": "Secundarias", "name": "A través del tiempo y el espacio", "desc": "Despídete de Lear.", "type": "bronze", "missable": false, "online": false, "guide": "Visita a Lear en el momento correcto de la historia y sigue su arco hasta el final." },
+    { "id": "nsols_23", "chapter": "Secundarias", "name": "Mensajes de bendición", "desc": "Descubre el tablón de mensajes de la Partida de Nueva Kunlun.", "type": "silver", "missable": false, "online": false, "guide": "Busca el tablón de bendiciones oculto en la zona de la nave de Nueva Kunlun." },
+    { "id": "nsols_24", "chapter": "Secundarias", "name": "Do Re Mi So La", "desc": "Descifra el misterio de la partitura de la Torre del Amanecer.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra los fragmentos de partitura repartidos por el mapa y resuelve el puzle musical de la torre." },
+
+    // COLECCIONABLES Y PROGRESIÓN
+    { "id": "nsols_25", "chapter": "Progresión", "name": "El guerrero interior", "desc": "Domina todas las habilidades del árbol de habilidades.", "type": "silver", "missable": false, "online": false, "guide": "Desbloquea todos los nodos del árbol de habilidades gastando los puntos obtenidos al derrotar jefes y explorar." },
+    { "id": "nsols_26", "chapter": "Progresión", "name": "Cazador de recursos", "desc": "Encuentra todos los recursos e información marcados por Shanhai 9000.", "type": "silver", "missable": true, "online": false, "guide": "⚠️ MISSABLE: Compra SIEMPRE los chips de mapa a los robots Shanhai 9000 pagando, nunca por la fuerza. Recoge todos los puntos de interés que señala el mapa." },
+    { "id": "nsols_27", "chapter": "Progresión", "name": "Bien preparado", "desc": "Colecciona todos los Jades.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra los Jades ocultos en todo el mapa para mejorar las estadísticas de Yi." },
+    { "id": "nsols_28", "chapter": "Progresión", "name": "Mi amigo más fiel", "desc": "Maximiza la capacidad de munición del Arco Azul y consigue las versiones X de las tres flechas especiales.", "type": "silver", "missable": false, "online": false, "guide": "Amplía el carcaj al máximo y fabrica el Traspasanubes X, el Destructor de Truenos X y el Cazador de Sombras X usando los materiales de crafteo." },
+    { "id": "nsols_29", "chapter": "Progresión", "name": "Soy Yi y tengo un problema con la bebida", "desc": "Bebe todo el vino elaborado por Shennong.", "type": "bronze", "missable": false, "online": false, "guide": "Habla con Shennong y acepta beber cada tipo de vino que te ofrezca a lo largo de su arco de misión." },
+    { "id": "nsols_30", "chapter": "Progresión", "name": "Ejército de uno", "desc": "Derrota a todos los minijefes opcionales.", "type": "silver", "missable": false, "online": false, "guide": "Busca y derrota a todos los minijefes opcionales dispersos por el mapa. Algunos están bien escondidos." },
+
+    // TROFEOS MISSABLES / ESPECIALES
+    { "id": "nsols_31", "chapter": "Especiales", "name": "Juego sucio", "desc": "Usa el Erradicador Genético para combatir a Jiequan.", "type": "bronze", "missable": true, "online": false, "guide": "⚠️ MISSABLE: En la Fábrica, hackea dos guardias para encontrar el Erradicador Genético. Antes de entrar al arena de Jiequan, interactúa con el pod de inyección a la derecha de la puerta activando primero las dos estatuas a ambos lados. Si entras al combate sin usarlo, el trofeo se pierde para siempre en esa partida." },
+    { "id": "nsols_32", "chapter": "Especiales", "name": "¡Pelea de robots!", "desc": "Derrota a Tianshou usando un robot.", "type": "bronze", "missable": true, "online": false, "guide": "⚠️ MISSABLE: En el Distrito Empíreo (Pasajes), antes de llegar al minijefe, ve arriba a la derecha para encontrar un robot detrás de una puerta. Entra con él al combate contra Tianshou. Si derrotas al minijefe antes de conseguir el robot, el trofeo se pierde en esa partida." },
+    { "id": "nsols_33", "chapter": "Especiales", "name": "¿Pero qué has hecho?!", "desc": "Rompe la vasija de barro hecha por Shuanshuan.", "type": "bronze", "missable": true, "online": false, "guide": "⚠️ MISSABLE: En un punto de la historia, Shuanshuan te mostrará su vasija especial. Cuando se presente la oportunidad, rómpela. No podrás volver a hacerlo si avanzas en la historia sin actuar." },
+    { "id": "nsols_34", "chapter": "Especiales", "name": "¡Serás desgraciado...!", "desc": "Obtén los datos de mapa de Shanhai 9000 por la fuerza.", "type": "bronze", "missable": false, "online": false, "guide": "⚠️ ANULA 'Reciclado': Arranca el chip a un robot Shanhai 9000 por la fuerza. Hazlo en una partida nueva o con un guardado de respaldo en PS Plus, ya que hacerlo en tu partida principal invalida el trofeo 'Reciclado'. Solo tarda unos 20 minutos llegar al primer robot desde cero." },
+    { "id": "nsols_35", "chapter": "Especiales", "name": "Corazón de piedra", "desc": "Establece una relación profunda con Shuanshuan.", "type": "bronze", "missable": false, "online": false, "guide": "Habla con Shuanshuan frecuentemente y entrégale todos los objetos que necesita. Se completa de forma natural al conseguir el trofeo 'Reciclado'." },
+    { "id": "nsols_36", "chapter": "Especiales", "name": "¡Stonks!", "desc": "Recicla la moneda de Shuanshuan.", "type": "bronze", "missable": false, "online": false, "guide": "Habla con Shuanshuan cuando te ofrezca comprar su moneda y acepta el trato." }
+  ]
 }
 
 ];
