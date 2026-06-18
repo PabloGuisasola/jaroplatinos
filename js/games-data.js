@@ -72,7 +72,154 @@ const GAMES = [
       { id: "hk_36", chapter: "End-Game (DLCs)", name: "Alma y Sombra", desc: "Supera el Panteón del Caballero.", type: "silver", missable: false, online: false, guide: "Es el 4º Panteón de Buscadioses. El jefe final es la Vasija Pura." },
       { id: "hk_37", chapter: "End-Game (DLCs)", name: "Abraza el Vacío", desc: "Supera el Panteón de Hallownest.", type: "gold", missable: false, online: false, guide: "El reto definitivo. Un asalto consecutivo contra los 42 jefes del juego. El jefe final es Destello Absoluto. Se requiere una paciencia inhumana y mucha práctica." }
     ]
-  },
+  },{
+  "id": "blasphemous",
+  "slug": "blasphemous",
+  "title": "Blasphemous",
+  "platform": "PS4",
+  "cover": "img/blasphemous.jpg",
+  "emoji": "🩸",
+  "totalTrophies": 46,
+  "difficulty": "5/10",
+  "minHours": 25,
+  "hasMissable": true,
+  "tags": ["metroidvania", "soulslike", "indie", "action-platformer"],
+  "trophies": [
+    // PLATINO
+    { "id": "bl_01", "chapter": "Platino", "name": "El Penitente", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "El trofeo de platino definitivo. Requiere completar el juego al 100%, realizar varias misiones secundarias propensas a perderse y cumplir desafíos específicos como pasarse los jefes sin curarse." },
+
+    // FINALES Y PERDIBLES CRÍTICOS
+    { "id": "bl_02", "chapter": "Finales", "name": "El camino del Penitente", "desc": "Consigue el final B.", "type": "silver", "missable": false, "online": false, "guide": "El final normal del juego. Se obtiene al derrotar al jefe final sin haber completado la misión de las estatuas de los confesores de la culpa." },
+    { "id": "bl_03", "chapter": "Finales (Perdible)", "name": "El camino del Milagro", "desc": "Consigue el final A.", "type": "gold", "missable": true, "online": false, "guide": "¡PERDIBLE! Tienes que romper las 7 estatuas de los confesores, superar sus salas de desafíos con el amuleto 'Peso de la Verdadera Culpa' equipado y luego vencer al jefe final." },
+    { "id": "bl_04", "chapter": "Desafíos (Perdible)", "name": "Requiem Aeternam", "desc": "Derrota a todos los jefes principales sin consumir matraces de bilis.", "type": "gold", "missable": true, "online": false, "guide": "¡MUY PERDIBLE! No puedes usar curaciones de frasco en ninguna de las peleas de jefes del juego base. Si usas uno por error, déjate matar y repite el combate." },
+    { "id": "bl_05", "chapter": "Desafíos (Perdible)", "name": "Carrerón", "desc": "Cruza las puertas de bronce en el puente del Calvario en menos de 3 horas.", "type": "silver", "missable": true, "online": false, "guide": "¡PERDIBLE! Debes derrotar a los tres primeros jefes de las tres humillaciones y llegar al puente antes de que el contador de juego pase de las 3 horas." },
+
+    // JEFES DE LA HISTORIA
+    { "id": "bl_06", "chapter": "Jefes", "name": "Pecado original", "desc": "Derrota al Guardián del Lamento Silencioso.", "type": "bronze", "missable": false, "online": false, "guide": "El jefe del tutorial, imposible de perder." },
+    { "id": "bl_07", "chapter": "Jefes", "name": "Fe ciega", "desc": "Derrota a Ten Piedad.", "type": "bronze", "missable": false, "online": false, "guide": "Uno de los tres jefes de las Tres Humillaciones. Se encuentra en el Sueño de la Madre." },
+    { "id": "bl_08", "chapter": "Jefes", "name": "Su santidad", "desc": "Derrota a Nuestra Señora de la Faz Denegrida.", "type": "bronze", "missable": false, "online": false, "guide": "Uno de los tres jefes de las Tres Humillaciones. Se encuentra en los Conventos de Nuestra Señora." },
+    { "id": "bl_09", "chapter": "Jefes", "name": "Hermano de sangre", "desc": "Derrota a Perpetva.", "type": "bronze", "missable": true, "online": false, "guide": "¡PERDIBLE! Aparece una única vez en Jondo. Si te mata, desaparecerá y perderás el trofeo en esa partida." },
+    { "id": "bl_10", "chapter": "Jefes", "name": "Baile de máscaras", "desc": "Derrota a Expósito, Vástago de la Abjuración.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en el Suburbio de los Lienzos Secos." },
+    { "id": "bl_11", "chapter": "Jefes", "name": "Por el Milagro", "desc": "Derrota a las Tres Angustias.", "type": "bronze", "missable": false, "online": false, "guide": "Uno de los tres jefes de las Tres Humillaciones. Se encuentra en Griego y Lamento." },
+    { "id": "bl_12", "chapter": "Jefes", "name": "Cenizas a las cenizas", "desc": "Derrota a Teshno, el Primer Hijo de las Cenizas.", "type": "bronze", "missable": false, "online": false, "guide": "Combate en el Puente de los Calvarios tras conseguir las Tres Humillaciones." },
+    { "id": "bl_13", "chapter": "Jefes", "name": "Impiedad extrema", "desc": "Derrota a Melquíades, el Arzobispo Exhumado.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en la Madre de las Madres." },
+    { "id": "bl_14", "chapter": "Jefes", "name": "Seda y espinas", "desc": "Derrota a Quirce, el Devuelto por las Llamas.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en el Muro de las Santas Prohibiciones." },
+    { "id": "bl_15", "chapter": "Jefes", "name": "Cisma ciego", "desc": "Derrota a Crisanta de la Agonía Vendada.", "type": "silver", "missable": false, "online": false, "guide": "Jefe obligatorio justo antes del final del juego." },
+    { "id": "bl_16", "chapter": "Jefes", "name": "Summa Blasphemia", "desc": "Derrota a Su Santidad Escribar.", "type": "gold", "missable": false, "online": false, "guide": "El jefe final del juego, en lo alto del Trono de Ceniza." },
+
+    // MISIONES SECUNDARIAS Y LORE (MUCHOS PERDIBLES)
+    { "id": "bl_17", "chapter": "Misiones (Perdible)", "name": "Últimas palabras", "desc": "Habla con todos los cadáveres.", "type": "silver", "missable": true, "online": false, "guide": "¡PERDIBLE! Necesitas el relicario 'Lienzo de los Hilos de Oro' para escuchar los 26 cadáveres esparcidos por el mapa. Ojo con los de zonas que puedan alterarse." },
+    { "id": "bl_18", "chapter": "Misiones (Perdible)", "name": "El deseo del Corrupto", "desc": "Consigue que Cleofás cumpla su condena.", "type": "silver", "missable": true, "online": false, "guide": "¡PERDIBLE! Tienes que hacer su misión correctamente entregándole los tres cordones de sufrimiento para evitar que se suicide saltando desde el tejado." },
+    { "id": "bl_19", "chapter": "Misiones (Perdible)", "name": "Renacer", "desc": "Ayuda a Socorro a encontrar consuelo.", "type": "silver", "missable": true, "online": false, "guide": "¡PERDIBLE! Está ligada a la misión de Cleofás. Debes darle las tres ofrendas de sufrimiento para aliviarla." },
+    { "id": "bl_20", "chapter": "Misiones (Perdible)", "name": "La reunión de los hermanos", "desc": "Encuentra el lugar de descanso de Perpetva.", "type": "bronze", "missable": true, "online": false, "guide": "¡PERDIBLE! Visita la tumba de Perpetva en las Almas de Arena ANTES de luchar contra Esdras en el puente." },
+    { "id": "bl_21", "chapter": "Misiones (Perdible)", "name": "Dieta mediterránea", "desc": "Salva a todos los Kissers of Wounds (Besadores de Llagas).", "type": "silver", "missable": true, "online": false, "guide": "¡MUY PERDIBLE! Debes traerle los ingredientes curativos a Tirso a tiempo. Si vences a un jefe principal antes de entregar la medicina que toca, uno de los enfermos morirá y adiós trofeo." },
+    { "id": "bl_22", "chapter": "Misiones (Perdible)", "name": "Mercadillo", "desc": "Compra todos los objetos a las tiendas de Candelaria.", "type": "bronze", "missable": true, "online": false, "guide": "¡PERDIBLE! Compra todo el inventario en sus tres tiendas (Graveyard of the Peaks, Mercy Dreams, The Sleeping Canvases)." },
+    { "id": "bl_23", "chapter": "Misiones", "name": "Cáliz de la aceptación", "desc": "Llena el cáliz con la sangre de las tres bestias.", "type": "bronze", "missable": false, "online": false, "guide": "Completa el desafío del Cáliz en los Lienzos Secos matando a tres enemigos específicos sin usar el viaje rápido ni morir en el intento." },
+
+    // COLECCIONABLES Y PROGRESO
+    { "id": "bl_24", "chapter": "Coleccionables", "name": "Piel y hueso", "desc": "Encuentra todos los coleccionables de restos óseos.", "type": "silver", "missable": false, "online": false, "guide": "Hay 44 huesos en total que debes recoger y llevar al osario en Albero." },
+    { "id": "bl_25", "chapter": "Coleccionables", "name": "Crianza del Milagro", "desc": "Libera a todos los querubines encastrados.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra y rompe los frascos flotantes de los 38 querubines (niños atrapados) por todo Hallownest." },
+    { "id": "bl_26", "chapter": "Coleccionables", "name": "Devoción mística", "desc": "Consigue todos los rezos.", "type": "silver", "missable": true, "online": false, "guide": "¡PERDIBLE! Hay 13 rezos. Algunos dependen de misiones secundarias propensas a fallar como la de Cleofás o Tirso." },
+    { "id": "bl_27", "chapter": "Coleccionables", "name": "Guardia del Milagro", "desc": "Consigue todas las cuentas de rosario.", "type": "silver", "missable": true, "online": false, "guide": "¡PERDIBLE! Encuentra las 30 cuentas del rosario del juego base." },
+    { "id": "bl_28", "chapter": "Coleccionables", "name": "El cepillo de las almas", "desc": "Consigue todos los corazones de Mea Culpa.", "type": "silver", "missable": true, "online": false, "guide": "¡PERDIBLE! Hay 9 corazones de espada. Uno de ellos te lo da la misión de estatuas de confesores y otro se compra." },
+    { "id": "bl_29", "chapter": "Coleccionables", "name": "Buscador de reliquias", "desc": "Consigue todas las reliquias.", "type": "silver", "missable": false, "online": false, "guide": "Hay 7 reliquias que te otorgan habilidades de exploración (como ver plataformas de sangre o pisar barro sin ralentizar)." },
+
+    // MEJORAS DE PERSONAJE
+    { "id": "bl_30", "chapter": "Mejoras", "name": "Plena potencia", "desc": "Consigue el nivel máximo de Mea Culpa.", "type": "silver", "missable": false, "online": false, "guide": "Visita los 7 altares de Mea Culpa repartidos por el mapa del juego para subir la espada al nivel 7." },
+    { "id": "bl_31", "chapter": "Mejoras", "name": "Sagrario lleno", "desc": "Consigue la capacidad máxima de matraces de bilis.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra los contenedores de bilis vacíos y llénalos en las fuentes de sangre para alcanzar el máximo." },
+    { "id": "bl_32", "chapter": "Mejoras", "name": "Sangre y lágrimas", "desc": "Compra todas las habilidades en los altares de Mea Culpa.", "type": "silver", "missable": false, "online": false, "guide": "Requiere desbloquear el nivel 7 de la espada y gastar una gran cantidad de Lágrimas de Expiación." },
+    { "id": "bl_33", "chapter": "Mejoras", "name": "Seis dolores", "desc": "Consigue el tamaño máximo de la barra de salud.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra las 6 damas que aumentan tu vitalidad máxima." },
+    { "id": "bl_34", "chapter": "Mejoras", "name": "Bautismo de fe", "desc": "Consigue el tamaño máximo de la barra de fervor.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra las 6 fuentes de aceite bendito para maximizar tu fervor." },
+    { "id": "bl_35", "chapter": "Mejoras", "name": "Engalanado", "desc": "Desbloquea todos los huecos del rosario.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra los nudos de rosario y dáselos a la tejedora para expandir tus ranuras hasta un máximo de 8." },
+
+    // EXPLORACIÓN Y COMBATE MISCELÁNEO
+    { "id": "bl_36", "chapter": "Exploración", "name": "Testigo del Milagro", "desc": "Consigue el 100% de finalización del juego.", "type": "gold", "missable": true, "online": false, "guide": "¡PERDIBLE! Requieres descubrir todo el mapa, coleccionables, mejoras y completar las misiones secundarias en una única partida." },
+    { "id": "bl_37", "chapter": "Exploración", "name": "Santuario de la Inquisición", "desc": "Descubre todas las zonas del mapa.", "type": "silver", "missable": false, "online": false, "guide": "Debes pisar cada rincón del mapeado hasta alcanzar el 100% de exploración cartográfica." },
+    { "id": "bl_38", "chapter": "Combate", "name": "Furia ciega", "desc": "Ejecuta un contraataque perfecto.", "type": "bronze", "missable": false, "online": false, "guide": "Bloquea con el botón de parry justo antes de recibir un impacto y pulsa el botón de ataque inmediatamente." },
+    { "id": "bl_39", "chapter": "Combate", "name": "Inquisición", "desc": "Ejecuta a 5 enemigos diferentes.", "type": "bronze", "missable": false, "online": false, "guide": "Aturde a los enemigos (dejándolos de rodillas en rojo) y pulsa el botón indicado para realizar una ejecución sangrienta." },
+    { "id": "bl_40", "chapter": "Combate", "name": "Golpe de gracia", "desc": "Usa el ataque en caída contra un enemigo.", "type": "bronze", "missable": false, "online": false, "guide": "Golpea a un enemigo desde el aire manteniendo hacia abajo el joystick con la habilidad correspondiente comprada." },
+    { "id": "bl_41", "chapter": "Misceláneo", "name": "Último aliento", "desc": "Sobrevive a un impacto mortal gracias al rosario.", "type": "bronze", "missable": false, "online": false, "guide": "Equipa la cuenta 'Gota de Sangre Coagulada' o similar que te deje con 1 PS al recibir un golpe letal." },
+    { "id": "bl_42", "chapter": "Misceláneo", "name": "Por si acaso", "desc": "Golpea una pared oculta.", "type": "bronze", "missable": false, "online": false, "guide": "Rompe tu primer muro falso para revelar una sala secreta." },
+    { "id": "bl_43", "chapter": "Misceláneo", "name": "Detrás del cristal", "desc": "Destruye el cristal que custodia una reliquia.", "type": "bronze", "missable": false, "online": false, "guide": "Forma parte del progreso al conseguir ciertas reliquias tras romper su sello protector." },
+    { "id": "bl_44", "chapter": "Misceláneo", "name": "Gasto inútil", "desc": "Haz una donación en el cepillo de la iglesia de Albero.", "type": "bronze", "missable": false, "online": false, "guide": "Introduce monedas de Lágrimas de Expiación en el cofre de la iglesia de Albero por primera vez." },
+    { "id": "bl_45", "chapter": "Misceláneo", "name": "Hermana mía", "desc": "Supera todos los desafíos de las puertas de arena.", "type": "bronze", "missable": false, "online": false, "guide": "Completa las salas de plataformas contrarreloj que se abren usando la reliquia adecuada." },
+    { "id": "bl_46", "chapter": "Misceláneo", "name": "Expiación", "desc": "Limpia tu culpa interactuando con una estatua de confesor.", "type": "bronze", "missable": false, "online": false, "guide": "Tras morir, ve a una estatua de confesor y paga lágrimas para recuperar tu barra de fervor bloqueada." }
+  ]
+},
+ {
+  "id": "blasphemous-ii",
+  "slug": "blasphemous-ii",
+  "title": "Blasphemous II",
+  "platform": "PS5",
+  "cover": "img/blasphemous-ii.jpg",
+  "emoji": "🙏",
+  "totalTrophies": 46,
+  "difficulty": "4/10",
+  "minHours": 20,
+  "hasMissable": true,
+  "tags": ["metroidvania", "soulslike", "indie", "action-platformer"],
+  "trophies": [
+    // PLATINO
+    { "id": "bl2_01", "chapter": "Platino", "name": "El Penitente Segundo", "desc": "Consigue todos los trofeos.", "type": "platinum", "missable": false, "online": false, "guide": "El platino de esta secuela es notablemente más asequible que el del primero. No hay trofeos de pasarse jefes sin curarse, pero sí requiere alcanzar el 100% del juego y estar atento a un par de misiones secundarias perdibles." },
+
+    // FINALES Y PERDIBLES CRÍTICOS
+    { "id": "bl2_02", "chapter": "Finales", "name": "El lienzo de la luz", "desc": "Consigue el Final B.", "type": "silver", "missable": false, "online": false, "guide": "El final estándar. Se obtiene simplemente al derrotar al jefe final sin cumplir los requisitos del final alternativo." },
+    { "id": "bl2_03", "chapter": "Finales (Perdible)", "name": "Ojo de la aguja", "desc": "Consigue el Final A.", "type": "gold", "missable": true, "online": false, "guide": "¡PERDIBLE! Requiere conseguir las 4 figuras específicas del Retablo de Favores (Cenizo, Jofre, Gregal y Lebeche), transmutarlas en sus versiones de oro en los quemadores de azufre, colocarlas orientadas hacia el centro en el Retablo y quemarlas para obtener la 'Ofrenda de los Desamparados' antes de la pelea final." },
+    { "id": "bl2_04", "chapter": "Misiones (Perdible)", "name": "Martirio y sanación", "desc": "Entrega todos los objetos a la Madre de los Besos.", "type": "silver", "missable": true, "online": false, "guide": "¡PERDIBLE! Tienes que entregar los lienzos y ungüentos a la orden en Albero. Si avanzas demasiado en la historia sin curar a los enfermos en su orden cronológico de peticiones, la misión puede bloquearse." },
+    { "id": "bl2_05", "chapter": "Desafíos", "name": "Una cita a ciegas", "desc": "Llega a la sala del Centinela del Embozo en menos de 30 minutos.", "type": "bronze", "missable": true, "online": false, "guide": "¡PERDIBLE! Desde el inicio de la partida, debes correr directamente hacia el jefe en Profundo Lamento y ganarle antes de que pasen 30 minutos. Se recomienda hacerlo en una partida nueva rápida." },
+
+    // JEFES DE LA HISTORIA
+    { "id": "bl2_06", "chapter": "Jefes", "name": "Milagro de sangre", "desc": "Derrota al Faceless One, Chisel of Oblivion.", "type": "bronze", "missable": false, "online": false, "guide": "El jefe tutorial del juego, imposible de perder." },
+    { "id": "bl2_07", "chapter": "Jefes", "name": "Oro y resina", "desc": "Derrota a Gran Maza Orospina de la Cofradía de los Bordadores.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en los Palacios de los Bordados." },
+    { "id": "bl2_08", "chapter": "Jefes", "name": "Hierro y espinas", "desc": "Derrota a Lesmes del Santo Sepulcro y la Infanta.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en las Torres Sagradas." },
+    { "id": "bl2_09", "chapter": "Jefes", "name": "La última palabra", "desc": "Derrota al Centinela del Embozo.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en Profundo Lamento." },
+    { "id": "bl2_10", "chapter": "Jefes", "name": "Carne y sangre", "desc": "Derrota a Sínodo, Himno de las Mil Voces.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en la Torre de los Cinco Dedos." },
+    { "id": "bl2_11", "chapter": "Jefes", "name": "La danza de las olas", "desc": "Derrota a la Infanta de la marea, Afilaor.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en la Costa de los Lienzos Desvaídos." },
+    { "id": "bl2_12", "chapter": "Jefes", "name": "Ceniza al viento", "desc": "Derrota a Benedicta de la Cofradía de la Sagrada Faz.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio en la Basílica de las Caras Ausentes." },
+    { "id": "bl2_13", "chapter": "Jefes", "name": "Juicio final", "desc": "Derrota a Odon de la Cofradía de la Sal.", "type": "bronze", "missable": false, "online": false, "guide": "Jefe obligatorio ubicado en el Mar de Tinta." },
+    { "id": "bl2_14", "chapter": "Jefes", "name": "El precio del perdón", "desc": "Derrota a Eviterno, Primer Penitente.", "type": "silver", "missable": false, "online": false, "guide": "El penúltimo jefe. Es el combate más difícil y técnico de todo el juego." },
+    { "id": "bl2_15", "chapter": "Jefes", "name": "La última ascensión", "desc": "Derrota al Devoción Encarada, el Hijo del Milagro.", "type": "gold", "missable": false, "online": false, "guide": "El jefe final de la aventura." },
+
+    // ARMAS Y COMBATE
+    { "id": "bl2_16", "chapter": "Armas", "name": "Veredicto", "desc": "Consigue el arma Veredicto.", "type": "bronze", "missable": false, "online": false, "guide": "El gran mayal. Lo eliges al principio o lo encuentras en los Sagrados Sepulcros." },
+    { "id": "bl2_17", "chapter": "Armas", "name": "Sarmiento y Centella", "desc": "Consigue el arma Sarmiento y Centella.", "type": "bronze", "missable": false, "online": false, "guide": "Los estoques gemelos. Los eliges al principio o los encuentras en el Palacio de los Bordados." },
+    { "id": "bl2_18", "chapter": "Armas", "name": "Ruego Al Alba", "desc": "Consigue el arma Ruego Al Alba.", "type": "bronze", "missable": false, "online": false, "guide": "La espada equilibrada. La eliges al principio o la encuentras en la Corona de Torres." },
+    { "id": "bl2_19", "chapter": "Armas", "name": "Fuerza bendita", "desc": "Desbloquea todo el potencial de una de las armas.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra las estatuas de mejora para un arma y gasta marcas de martirio para completar su árbol de habilidades." },
+    { "id": "bl2_20", "chapter": "Armas", "name": "Guerrero devoto", "desc": "Desbloquea todo el potencial de todas las armas.", "type": "silver", "missable": false, "online": false, "guide": "Lleva al nivel máximo los árboles de Veredicto, Sarmiento y Centella, y Ruego al Alba." },
+    { "id": "bl2_21", "chapter": "Combate", "name": "Ejecución perfecta", "desc": "Ejecuta a 50 enemigos diferentes.", "type": "bronze", "missable": false, "online": false, "guide": "Aturde a los enemigos usando golpes contundentes (especialmente con Veredicto) y pulsa el botón indicado para rematarlos con gore." },
+
+    // COLECCIONABLES Y SEGUIDORES
+    { "id": "bl2_22", "chapter": "Coleccionables", "name": "No hay querubín sin cielo", "desc": "Rescata a todos los querubines atrapados.", "type": "silver", "missable": false, "online": false, "guide": "Hay 33 querubines flotando en jaulas por el mapa. Necesitarás combinar las habilidades de las tres armas para alcanzarlos a todos." },
+    { "id": "bl2_23", "chapter": "Coleccionables", "name": "Hermanas del lamento", "desc": "Encuentra a todas las Cobijadas escondidas.", "type": "silver", "missable": false, "online": false, "guide": "Hay 9 Cobijadas ocultas detrás de paredes falsas. Al encontrarlas, mejorarán tu viaje rápido en los Prie-Dieu." },
+    { "id": "bl2_24", "chapter": "Coleccionables", "name": "El vals de las velas", "desc": "Completa todos los desafíos de las Hijas del Luto.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra a las 5 hijas durmientes en sus camas repartidas por el mapa y supera sus salas de arena contrarreloj." },
+    { "id": "bl2_25", "chapter": "Coleccionables", "name": "El peso de la culpa", "desc": "Encuentra todas las Figuras del Retablo de Favores.", "type": "silver", "missable": false, "online": false, "guide": "Colecciona los 35 retablos tallados en madera. Muchos los vende el escultor, otros están ocultos en cofres o como recompensas de misiones." },
+    { "id": "bl2_26", "chapter": "Coleccionables", "name": "Oración del Penitente", "desc": "Consigue todos los Versos y Cantos (Rezos).", "type": "silver", "missable": false, "online": false, "guide": "Consigue la colección completa de magias del juego (los Versos rápidos y los Cantos pesados)." },
+    { "id": "bl2_27", "chapter": "Coleccionables", "name": "Último aliento", "desc": "Encuentra todos los Rosarios y Cuentas.", "type": "silver", "missable": false, "online": false, "guide": "Consigue todas las cuentas defensivas para el Rosario." },
+
+    // MEJORAS DE PERSONAJE
+    { "id": "bl2_28", "chapter": "Mejoras", "name": "Cuerpo santo", "desc": "Consigue la salud máxima.", "type": "silver", "missable": false, "online": false, "guide": "Entrega todos los cálices rellenos de sangre a la dama de los cálices en la Ciudad del Nombre Santo." },
+    { "id": "bl2_29", "chapter": "Mejoras", "name": "Fervor del Milagro", "desc": "Consigue el fervor máximo.", "type": "silver", "missable": false, "online": false, "guide": "Entrega todos los besos fervorosos a la mano gigante en las calles de la ciudad." },
+    { "id": "bl2_30", "chapter": "Mejoras", "name": "Sagrario bendito", "desc": "Consigue el máximo de matraces de bilis.", "type": "silver", "missable": false, "online": false, "guide": "Encuentra todos los botes vacíos y entrégaselos a la mujer del laboratorio en la ciudad." },
+    { "id": "bl2_31", "chapter": "Mejoras", "name": "Espacio para el rezo", "desc": "Desbloquea todos los huecos del Retablo de Favores.", "type": "silver", "missable": false, "online": false, "guide": "Paga Marcas de Martirio al Escultor de figuras en su taller de la ciudad para desbloquear las 8 ranuras del retablo." },
+
+    // EXPLORACIÓN Y LOGROS MISCELÁNEOS
+    { "id": "bl2_32", "chapter": "Exploración", "name": "Segunda Venida", "desc": "Consigue el 100% de finalización del juego.", "type": "gold", "missable": true, "online": false, "guide": "¡PERDIBLE! Requiere revelar la totalidad del mapa, conseguir todas las armas, habilidades, coleccionables, figuras y rezos en la misma partida." },
+    { "id": "bl2_33", "chapter": "Exploración", "name": "Cartógrafo Segundo", "desc": "Descubre todo el mapa.", "type": "silver", "missable": false, "online": false, "guide": "Camina e inspecciona cada rincón hasta llegar al 100% del mapeado de las áreas." },
+    { "id": "bl2_34", "chapter": "Misceláneo", "name": "Devoción oculta", "desc": "Encuentra todas las paredes ocultas.", "type": "bronze", "missable": false, "online": false, "guide": "Golpea los muros ilusorios para revelar accesos ocultos en el escenario." },
+    { "id": "bl2_35", "chapter": "Misceláneo", "name": "Lágrimas de arrepentimiento", "desc": "Gasta 100.000 Lágrimas de Expiación.", "type": "bronze", "missable": false, "online": false, "guide": "Trofeo acumulativo. Gasta tus monedas en tiendas, en el cepillo de la iglesia o restableciendo tu culpa." },
+    { "id": "bl2_36", "chapter": "Misceláneo", "name": "Donación generosa", "desc": "Dona el máximo en el cepillo de la iglesia.", "type": "bronze", "missable": false, "online": false, "guide": "Deposita un total de 30.000 Lágrimas de Expiación en la caja de la iglesia de la Ciudad del Nombre Santo." },
+    { "id": "bl2_37", "chapter": "Misceláneo", "name": "El regreso del Escultor", "desc": "Completa la historia de Céas, el Escultor.", "type": "bronze", "missable": false, "online": false, "guide": "Entrégale todas las herramientas de tallado que encuentres por el mundo hasta finalizar su línea de diálogos." },
+    { "id": "bl2_38", "chapter": "Misceláneo", "name": "Un salto de fe", "desc": "Déjate caer al Mar de Tinta.", "type": "bronze", "missable": false, "online": false, "guide": "Lánzate al vacío en la zona inferior del mapa una vez tengas la reliquia o protección necesaria para sobrevivir al abismo." },
+    { "id": "bl2_39", "chapter": "Misceláneo", "name": "La casa de las trampas", "desc": "Sobrevive a la habitación de los picos en la Torre de los Cinco Dedos.", "type": "bronze", "missable": false, "online": false, "guide": "Supera la sala repleta de trampas mecánicas de pinchos esquivando con precisión." },
+    { "id": "bl2_40", "chapter": "Misceláneo", "name": "El precio de la información", "desc": "Compra todo el catálogo del comerciante ambulante.", "type": "bronze", "missable": false, "online": false, "guide": "Adquiere todos los objetos que vende Medardo y Escolástico a lo largo de sus distintas apariciones." },
+    { "id": "bl2_41", "chapter": "Misceláneo", "name": "Reunión de familia", "desc": "Lleva todas las cartas a sus destinatarios fantasmas.", "type": "bronze", "missable": false, "online": false, "guide": "Completa la misión secundaria de las páginas sueltas y las cartas de los fallecidos resolviendo los acertijos de ubicación." },
+    { "id": "bl2_42", "chapter": "Misceláneo", "name": "La siesta del guerrero", "desc": "Encuentra el lugar de descanso de Yerma.", "type": "bronze", "missable": false, "online": false, "guide": "Sigue los encuentros de Yerma ayudándola en los combates contra jefes hasta concluir su destino." },
+    { "id": "bl2_43", "chapter": "Misceláneo", "name": "Negocio redondo", "desc": "Desbloquea todas las ventajas del viaje rápido.", "type": "bronze", "missable": false, "online": false, "guide": "Se consigue automáticamente al avanzar y pagar el diezmo suficiente en la iglesia de la ciudad." },
+    { "id": "bl2_44", "chapter": "Misceláneo", "name": "Coleccionista de arte", "desc": "Combina dos figuras del retablo para activar un efecto especial.", "type": "bronze", "missable": false, "online": false, "guide": "Equipa dos figuras que tengan sinergia directa (como las que otorgan un daño elemental combinado) para activar una resonancia única." },
+    { "id": "bl2_45", "chapter": "Misceláneo", "name": "Bautismo de fuego", "desc": "Muere por daño de fuego por primera vez.", "type": "bronze", "missable": false, "online": false, "guide": "Déjate eliminar por trampas de llamas o ataques ígneos de algún enemigo." },
+    { "id": "bl2_46", "chapter": "Misceláneo", "name": "Castigo merecido", "desc": "Rompe la trampa del cofre falso.", "type": "bronze", "missable": false, "online": false, "guide": "Golpea e inhabilita un cofre trampa (Mímico) antes de que te ataque por sorpresa." }
+  ]
+},
   {
     id: "spiderman2",
     slug: "marvels-spiderman-2",
